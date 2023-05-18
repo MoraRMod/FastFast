@@ -45,4 +45,30 @@ class Manager:
 		else:
 			raise StopIteration
 		
-	#agregar funciones de abrir y guardar archivo.
+	def guardar(self, ubicacion):
+		try:
+			with open(ubicacion, 'w') as archivo:
+				lista = [[hour.toDict(), date.toDict(), product.toDict(), supplier.toDict(), client.toDict(), employee.toDict(), ticket.toDict(), bill.toDict()] for hour, date, product, supplier, client, employee, ticket, bill in self.__gerente]
+
+				print(lista)
+
+				json.dump(lista, archivo, indent = 4)
+
+				return 1
+		except Exception as e:
+			print(f"Error al guardar archivo: {e}")
+            
+			return 0
+		
+	def abrir(self, ubicacion):
+		try:
+			with open(ubicacion, 'r') as archivo:
+				lista = json.load(archivo)
+
+				self.__cumulos = [[Hour(**hour), Date(**date), Product(**product), Supplier(**supplier), Client(**client), Employee(**employee), Ticket(**ticket), Bill(**bill)] for hour, date, product, supplier, client, employee, ticket, bill in lista]
+
+				return 1
+		except Exception as e:
+			print(f"Error al abrir archivo: {e}")
+            
+			return 0
