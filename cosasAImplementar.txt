@@ -1,13 +1,4 @@
 Cosas a implementar en el proyecto:
-- Registros de longitud fija(acceso directo) y Registros de longitud varible (campos de dimensión):
-	Como tal no existe un registro en python, por lo que nuestros registros de longitud variable serán guardados como un diccionario.
-	registro = {
-   	 'nombre': 'Juan',
-   	 'edad': 30,
-  	  'direcciones': ['Calle 123', 'Avenida 456']
-	}
-	Donde 'nombre' tiene longitud fija (un valor cadena), 'edad' es un número entero, y 'direcciones' es una tupla de longitud variable.
-
 - Índices simples:
 	Nos vamos a referir a los índices de una lista donde sus elementos estaran contenidos en un índice como lo es:
 	my_list = ['a', 'b', 'c', 'd', 'e']
