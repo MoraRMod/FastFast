@@ -8,6 +8,13 @@ class Hour:
 		return(
 			str(self.__minute) + ":" + str(self.__hour)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"minute": self.__minute,
+			"hour": self.__hour
+		}
+
 	# SETTERS
 	def setMinute(self, minute):
 		self.__minute = minute
