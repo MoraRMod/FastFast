@@ -37,3 +37,4 @@ for obj in elemento:
 	print(obj)
 
 # Indice invertido
+
