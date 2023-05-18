@@ -24,6 +24,18 @@ class Employee:
 			"Correo: " + str(self.__mail) + "\n" +
 			"Número de teléfono: " + str(self.__phoneNumber)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"id": self.__id,
+			"birthday": self.__birthday,
+			"name": self.__name,
+			"address": self.__address,
+			"rfc": self.__rfc,
+			"mail": self.__mail,
+			"phoneNumber": self.__phoneNumber,
+		}
+	
 	# SETTERS
 	def setID(self, id):
 		self.__id = id
