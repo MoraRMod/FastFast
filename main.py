@@ -27,3 +27,8 @@ while index <= 4:
 
 	index += 1
 
+elemento = gerente.getIndex(1)
+
+print("Indice 1")
+for obj in elemento:
+	print(obj)
