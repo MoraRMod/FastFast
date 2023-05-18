@@ -9,4 +9,5 @@ from bill import Bill
 from plainIndex import getIndex
 from invertedIndex import actualizarIndiceInvertido, mostrarIndiceInvertido
 from serialization import serializar, deserializar
+from dispersion import dispersar, mostrarDispersado
 from manager import Manager
