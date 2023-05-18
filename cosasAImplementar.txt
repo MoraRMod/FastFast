@@ -1,0 +1,109 @@
+Cosas a implementar en el proyecto:
+- Registros de longitud fija(acceso directo) y Registros de longitud varible (campos de dimensión):
+	Como tal no existe un registro en python, por lo que nuestros registros de longitud variable serán guardados como un diccionario.
+	registro = {
+   	 'nombre': 'Juan',
+   	 'edad': 30,
+  	  'direcciones': ['Calle 123', 'Avenida 456']
+	}
+	Donde 'nombre' tiene longitud fija (un valor cadena), 'edad' es un número entero, y 'direcciones' es una tupla de longitud variable.
+
+- Índices simples:
+	Nos vamos a referir a los índices de una lista donde sus elementos estaran contenidos en un índice como lo es:
+	my_list = ['a', 'b', 'c', 'd', 'e']
+	print(my_list[0])  # Acceder al primer elemento: 'a'
+	Así, podremos acceder a sus elementos en forma de un índice simple.
+
+- Índices Inivertidos:
+	Utilizaremos esto como base:
+
+	def build_inverted_index(documents):
+ 	   inverted_index = {}
+ 	   for doc_id, document in enumerate(documents):
+        	tokens = document.split()
+        	for token in tokens:
+            		if token not in inverted_index:
+                		inverted_index[token] = []
+            			inverted_index[token].append(doc_id)
+ 	   return inverted_index
+
+	def search_inverted_index(inverted_index, term):
+ 	   if term in inverted_index:
+     		   return inverted_index[term]
+ 	   else:
+     		   return []
+
+	# Ejemplo de uso
+	documents = [
+  		  "Este es el primer documento",
+  		  "Este es el segundo documento",
+  		  "El tercer documento es diferente",
+	]
+
+	inverted_index = build_inverted_index(documents)
+
+	search_term = "documento"
+	results = search_inverted_index(inverted_index, search_term)
+	print(f"Documentos que contienen el término '{search_term}': {results}")
+
+- Serialización:
+	Hay varios formatos que podemos utilizar para la serialización, estos son algunos:
+		- pickle.
+		- json.
+		- marshal.
+		- shelve.
+
+- Dispersión o Hashing:
+	Para ello podemos implentarlo de dos formas, con hash() o dict, aquí unos ejemplos de como sería:
+		Con hash():
+			cadena = "Hola Mundo"
+			hash_cadena = hash(cadena)
+			print(f"Hash de la cadena '{cadena}': {hash_cadena}")
+		Con dict:
+			diccionario = {
+			    'nombre': 'Juan',
+			    'edad': 30,
+			    'ciudad': 'México'
+			}
+
+			print(diccionario['nombre'])  # Imprime 'Juan'
+			print(diccionario['edad'])  # Imprime 30
+
+			# Agregar un nuevo elemento al diccionario
+			diccionario['ocupacion'] = 'Ingeniero'
+
+			# Iterar sobre las claves y valores del diccionario
+			for clave, valor in diccionario.items():
+			    print(f"{clave}: {valor}")
+
+- Encriptación y desencriptación:
+	Para ello podemos hacer uso de varias librerias como lo son:
+		- hashlib.
+		- cryptography.
+		- fernet.
+
+- Compresión y descompresión:
+	Para ello podemos utilizar los modulos:
+		- zlib.
+		- gzip.
+		- bz2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						
+		
