@@ -1,11 +1,4 @@
 Cosas a implementar en el proyecto:
-- Serialización:
-	Hay varios formatos que podemos utilizar para la serialización, estos son algunos:
-		- pickle.
-		- json.
-		- marshal.
-		- shelve.
-
 - Dispersión o Hashing:
 	Para ello podemos implentarlo de dos formas, con hash() o dict, aquí unos ejemplos de como sería:
 		Con hash():
