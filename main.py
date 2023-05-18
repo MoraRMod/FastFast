@@ -7,7 +7,17 @@ from employee import Employee
 from ticket import Ticket
 from bill import Bill
 
-fech = Date("23", "234", "54")
-prueba = Employee("102364", fech, "Kike", "Primavera", "fsf2f", "kike@gmail.com", "465626")
+prueba = []
+hora = Hour('09', '45')
+fecha = Date('17', '05', '2023')
+nombre = Employee()
+producto = Product()
+cliente = Client()
+
+nombre.setName('Omar')
+producto.setName('Galletas')
+cliente.setName('Yair')
+
+prueba = Bill(hora, fecha, nombre.getName(), producto.getName(), cliente.getName())
 
 print(prueba)
