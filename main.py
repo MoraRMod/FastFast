@@ -36,7 +36,14 @@ indiceI = actualizarIndiceInvertido(gerente)
 mostrarIndiceInvertido(gerente, indiceI)
 '''
 
+'''
 # Serializacion
 serializar(gerente, 'gerente.pkl')
 
 gerente_deserializado = deserializar('gerente.pkl')
+'''
+
+# Dispersion
+
+dispersar(gerente)
+mostrarDispersado(gerente)
