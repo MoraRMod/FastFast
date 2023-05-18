@@ -26,7 +26,7 @@ class Manager:
 
 	def getIndex(self, index):
 		return self.__gerente[index]
-	
+
 	def __len__(self):
 		return(
 			len(self.__gerente)
@@ -38,8 +38,8 @@ class Manager:
 		return self
 	
 	def __next__(self):
-		if self.cont < len(self.__cumulos):
-			quark = self.__cumulos[self.cont]
+		if self.cont < len(self.__gerente):
+			quark = self.__gerente[self.cont]
 
 			self.cont += 1
 
@@ -68,7 +68,7 @@ class Manager:
 			with open(ubicacion, 'r') as archivo:
 				lista = json.load(archivo)
 
-				self.__cumulos = [[Hour(**hour), Date(**date), Product(**product), Supplier(**supplier), Client(**client), Employee(**employee), Ticket(**ticket), Bill(**bill)] for hour, date, product, supplier, client, employee, ticket, bill in lista]
+				self.__gerente = [[Hour(**hour), Date(**date), Product(**product), Supplier(**supplier), Client(**client), Employee(**employee), Ticket(**ticket), Bill(**bill)] for hour, date, product, supplier, client, employee, ticket, bill in lista]
 
 				return 1
 		except Exception as e:
