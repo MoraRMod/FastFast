@@ -23,7 +23,8 @@ class Manager:
 		self.__gerente.append(bill)
 
 	def mostrar(self):
-		print("ola")
+		for item in self.__gerente:
+			print(item)
 
 	def __len__(self):
 		return(
