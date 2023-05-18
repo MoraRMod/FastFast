@@ -13,6 +13,15 @@ class Supplier:
 			"Correo: " + str(self.__mail) + "\n" +
 			"Número de teléfono: " + str(self.__phoneNumber)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"name": self.__name,
+			"address": self.__address,
+			"mail": self.__mail,
+			"phoneNumber": self.__phoneNumber,
+		}
+	
 	# SETTERS
 	def setName(self, name):
 		self.__name = name
