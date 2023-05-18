@@ -12,20 +12,21 @@ class Manager:
 	def __init__(self) -> None:
 		self.__gerente = []
 
-	def agregar(self, hour:Hour, date:Date, product:Product, supplier:Supplier, client:Client, employee:Employee, ticket:Ticket, bill:Bill):
-		self.__gerente.append(hour)
-		self.__gerente.append(date)
-		self.__gerente.append(product)
-		self.__gerente.append(supplier)
-		self.__gerente.append(client)
-		self.__gerente.append(employee)
-		self.__gerente.append(ticket)
-		self.__gerente.append(bill)
+	def agregar(self, *args):
+		self.__gerente.extend(args)
 
 	def mostrar(self):
-		for item in self.__gerente:
-			print(item)
+		for i in range(len(self.__gerente)):
+			print(f'Índice {i}')
 
+			for obj in self.__gerente[i]:
+				print(obj)
+
+			print("\n")
+
+	def __getitem__(self, index):
+		return self.__gerente[index]
+	
 	def __len__(self):
 		return(
 			len(self.__gerente)
@@ -45,6 +46,7 @@ class Manager:
 			return quark
 		else:
 			raise StopIteration
+	
 		
 	def guardar(self, ubicacion):
 		try:
