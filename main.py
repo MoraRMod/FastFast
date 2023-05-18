@@ -6,7 +6,8 @@ from supplier import Supplier
 from employee import Employee
 from ticket import Ticket
 from bill import Bill
-import indiceSimple
+from indiceSimple import getIndex
+from indiceInvertido import *
 from manager import Manager
 
 # Registros de prueba
@@ -30,11 +31,13 @@ while index <= 4:
 	index += 1
 
 # Indice simple
-elemento = indiceSimple.getIndex(gerente, 1)
+elemento = getIndex(gerente, 1)
 
-print("Indice 1")
+print("Indice simple: 1")
 for obj in elemento:
 	print(obj)
 
 # Indice invertido
-
+print('\n')
+indiceI = actualizar_indice_invertido(gerente)
+mostrar_indice_invertido(gerente, indiceI)
