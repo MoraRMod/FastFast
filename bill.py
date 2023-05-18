@@ -21,7 +21,7 @@ class Bill:
 			"Nombre del cliente: " + str(self.__nameClient)
 		)
 	# Guardar en disco
-	def to_dict(self):
+	def toDict(self):
 		return {
 			"broadcastHour": self.__broadcastHour,
 			"broadcastDate": self.__broadcastDate,
