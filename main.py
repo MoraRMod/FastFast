@@ -6,6 +6,7 @@ from supplier import Supplier
 from employee import Employee
 from ticket import Ticket
 from bill import Bill
+import indiceSimple
 from manager import Manager
 
 # Registros de prueba
@@ -13,6 +14,7 @@ gerente = Manager()
 index = 0
 
 while index <= 4:
+	# Registros de longitud fija y variable
 	cliente = Client('102364', 'Omar', 'DOJA98DHHF9', '56 4651 7427', 'ralerwip@gmail.com')
 	fecha = Date('17', '05', '2023')
 	hora = Hour('09', '45')
@@ -27,8 +29,11 @@ while index <= 4:
 
 	index += 1
 
-elemento = gerente.getIndex(1)
+# Indice simple
+elemento = indiceSimple.getIndex(gerente, 1)
 
 print("Indice 1")
 for obj in elemento:
 	print(obj)
+
+# Indice invertido
