@@ -25,6 +25,18 @@ class Ticket:
 			"Producto: " + str(self.__product) + "\n" +
 			"Método de pago: " + str(self.__methodPayment)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"id": self.__id,
+			"employee": self.__employee,
+			"hour": self.__hour,
+			"date": self.__date,
+			"productCode": self.__productCode,
+			"product": self.__product,
+			"methodPayment": self.__methodPayment,
+		}
+	
 	# SETTERS
 	def setID(self, id):
 		self.__id = id
