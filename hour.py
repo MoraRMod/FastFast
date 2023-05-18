@@ -5,9 +5,7 @@ class Hour:
 		self.__hour = hour
 	# toString de la clase
 	def __str__(self) -> str:
-		return(
-			str(self.__minute) + ":" + str(self.__hour)
-		)
+		return f"{self.__minute}:{self.__hour}"
 	# Guardar en disco
 	def toDict(self):
 		return {
