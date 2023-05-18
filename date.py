@@ -6,9 +6,8 @@ class Date:
 		self.__year = year
 	# toString de la clase
 	def __str__(self) -> str:
-		return(
-			str(self.__day) + "/" + str(self.__month) + "/" + str(self.__year)
-		)
+		return f"{self.__day}/{self.__month}/{self.__year}"
+	
 	# Guardar en disco
 	def toDict(self):
 		return {
