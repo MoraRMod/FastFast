@@ -7,7 +7,6 @@ from employee import Employee
 from ticket import Ticket
 from bill import Bill
 import json
-import pickle
 
 class Manager:
 	def __init__(self) -> None:
@@ -15,6 +14,9 @@ class Manager:
 
 	def agregar(self, *args):
 		self.__gerente.extend(args)
+
+	def getList(self):
+		return self.__gerente
 
 	def mostrar(self):
 		for i in range(len(self.__gerente)):
