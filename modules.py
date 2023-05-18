@@ -6,6 +6,7 @@ from supplier import Supplier
 from employee import Employee
 from ticket import Ticket
 from bill import Bill
-from indiceSimple import getIndex
-from indiceInvertido import actualizarIndiceInvertido, mostrarIndiceInvertido
+from plainIndex import getIndex
+from invertedIndex import actualizarIndiceInvertido, mostrarIndiceInvertido
+from serialization import serializar, deserializar
 from manager import Manager
