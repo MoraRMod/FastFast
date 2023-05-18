@@ -24,7 +24,7 @@ class Manager:
 
 			print("\n")
 
-	def __getitem__(self, index):
+	def getIndex(self, index):
 		return self.__gerente[index]
 	
 	def __len__(self):
