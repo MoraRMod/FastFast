@@ -1,4 +1,4 @@
-from modulos import *
+from modules import *
 
 # Registros de prueba
 gerente = Manager()
@@ -16,18 +16,27 @@ while index <= 4:
 	prueba = Bill(hora, fecha, empleado.getName(), producto.getName(), cliente.getName())
 	gerente.agregar([cliente, fecha, hora, producto, proovedor, empleado, recibo, prueba])
 
-	gerente.mostrar()
+	#gerente.mostrar()
 
 	index += 1
 
 # Indice simple
 elemento = getIndex(gerente, 1)
 
+'''
 print("Indice simple: 1")
 for obj in elemento:
 	print(obj)
+'''
 
+'''
 # Indice invertido
 print('\n')
 indiceI = actualizarIndiceInvertido(gerente)
 mostrarIndiceInvertido(gerente, indiceI)
+'''
+
+# Serializacion
+serializar(gerente, 'gerente.pkl')
+
+gerente_deserializado = deserializar('gerente.pkl')
