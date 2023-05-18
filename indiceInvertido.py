@@ -1,6 +1,6 @@
 from client import Client
 
-def actualizar_indice_invertido(manager):
+def actualizarIndiceInvertido(manager):
 	indice_invertido = {}
 	for i, registro in enumerate(manager):
 		for obj in registro:
@@ -11,7 +11,7 @@ def actualizar_indice_invertido(manager):
 				indice_invertido[nombre].append(i)
 	return indice_invertido
 
-def mostrar_indice_invertido(manager, indice_invertido):
+def mostrarIndiceInvertido(manager, indice_invertido):
     print("Índice invertido:")
     for nombre, indices in indice_invertido.items():
         print(f"Registros para el cliente '{nombre}':")
