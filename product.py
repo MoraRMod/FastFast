@@ -13,6 +13,15 @@ class Product:
 			"Nombre: " + str(self.__name) + "\n" +
 			"Código: " + str(self.__code)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"stock": self.__stock,
+			"unitaryValue": self.__unitaryValue,
+			"name": self.__name,
+			"code": self.__code
+		}
+	
 	# SETTERS
 	def setStock(self, stock):
 		self.__stock = stock
