@@ -9,6 +9,14 @@ class Date:
 		return(
 			str(self.__day) + "/" + str(self.__month) + "/" + str(self.__year)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"day": self.__day,
+			"month": self.__month,
+			"year": self.__year
+		}
+	
 	# SETTERS
 	def setDay(self, day):
 		self.__day = day
