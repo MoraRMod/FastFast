@@ -7,6 +7,7 @@ from employee import Employee
 from ticket import Ticket
 from bill import Bill
 import json
+import pickle
 
 class Manager:
 	def __init__(self) -> None:
