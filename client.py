@@ -18,6 +18,16 @@ class Client:
 			"Número de teléfono: " + str(self.__phoneNumber) + "\n" +
 			"Correo: " + str(self.__mail)
 		)
+	# Guardar en disco
+	def toDict(self):
+		return {
+			"id": self.__id,
+			"name": self.__name,
+			"rfc": self.__rfc,
+			"phoneNumber": self.__phoneNumber,
+			"mail": self.__mail
+		}
+	
 	# SETTERS
 	def setID(self, id):
 		self.__id = id
