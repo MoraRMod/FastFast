@@ -20,8 +20,10 @@ while index <= 4:
 
 	index += 1
 
+'''
 # Indice simple
 elemento = getIndex(gerente, 1)
+'''
 
 '''
 print("Indice simple: 1")
@@ -43,7 +45,17 @@ serializar(gerente, 'gerente.pkl')
 gerente_deserializado = deserializar('gerente.pkl')
 '''
 
+'''
 # Dispersion
-
 dispersar(gerente)
 mostrarDispersado(gerente)
+'''
+
+# Encriptacion
+clave = generarClave()
+
+gerenteBytes = pickle.dumps(gerente)
+msg = encriptar(gerenteBytes, clave)
+
+desEnBy = desencriptar(msg, clave)
+desEn = pickle.loads(desEnBy)
