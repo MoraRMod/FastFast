@@ -1,11 +1,6 @@
-from hour import Hour
-from date import Date
-from employee import Employee
-from product import Product
-
 class Bill:
 	# Agrega datos por clase
-	def __init__(self, broadcastHour = Hour(), broadcastDate = Date(), nameEmployee = Employee(), nameProduct = Product(), nameClient = "") -> None:
+	def __init__(self, broadcastHour = None, broadcastDate = None, nameEmployee = "", nameProduct = "", nameClient = "") -> None:
 		self.__broadcastHour = broadcastHour
 		self.__broadcastDate = broadcastDate
 		self.__nameEmployee = nameEmployee
@@ -23,8 +18,8 @@ class Bill:
 	# Guardar en disco
 	def toDict(self):
 		return {
-			"broadcastHour": self.__broadcastHour,
-			"broadcastDate": self.__broadcastDate,
+			"broadcastHour": self.__broadcastHour.toDict() if self.__broadcastHour else None,
+			"broadcastDate": self.__broadcastDate.toDict() if self.__broadcastDate else None,
 			"nameEmployee": self.__nameEmployee,
 			"nameProduct": self.__nameProduct,
 			"nameClient": self.__nameClient
