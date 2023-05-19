@@ -4,7 +4,7 @@ from modules import *
 gerente = Manager()
 index = 0
 
-while index <= 4:
+while index <= 0:
 	# Registros de longitud fija y variable
 	cliente = Client('102364', 'Omar', 'DOJA98DHHF9', '56 4651 7427', 'ralerwip@gmail.com')
 	fecha = Date('17', '05', '2023')
@@ -20,9 +20,15 @@ while index <= 4:
 
 	index += 1
 
+gerente.abrir('registros.json')
+
+gerente.mostrar()
+
 '''
 # Indice simple
 elemento = getIndex(gerente, 1)
+for obj in elemento:
+	print(obj)
 '''
 
 '''
@@ -62,6 +68,8 @@ desEnBy = desencriptar(msg, clave)
 desEn = pickle.loads(desEnBy)
 '''
 
+'''
 # Compresion
 comprimir(gerente)
 descomprimir('gerente.zip')
+'''
