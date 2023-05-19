@@ -51,6 +51,7 @@ dispersar(gerente)
 mostrarDispersado(gerente)
 '''
 
+'''
 # Encriptacion
 clave = generarClave()
 
@@ -59,3 +60,6 @@ msg = encriptar(gerenteBytes, clave)
 
 desEnBy = desencriptar(msg, clave)
 desEn = pickle.loads(desEnBy)
+'''
+
+#
