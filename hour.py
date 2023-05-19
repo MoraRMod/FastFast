@@ -1,28 +1,29 @@
 class Hour:
 	# Agrega datos por clase
-	def __init__(self, minute = "", hour = "") -> None:
-		self.__minute = minute
+	def __init__(self, hour = "", minute = "") -> None:
 		self.__hour = hour
+		self.__minute = minute
 	# toString de la clase
 	def __str__(self) -> str:
-		return f"{self.__minute}:{self.__hour}"
+		return f"{self.__hour}:{self.__minute}"
 	# Guardar en disco
 	def toDict(self):
 		return {
-			"minute": self.__minute,
-			"hour": self.__hour
+			"hour": self.__hour,
+			"minute": self.__minute
 		}
 
 	# SETTERS
-	def setMinute(self, minute):
-		self.__minute = minute
-	
+
 	def setHour(self, hour):
 		self.__hour = hour
 
-	# GETTERS
-	def getMinute(self):
-		return self.__minute
+	def setMinute(self, minute):
+		self.__minute = minute
 
+	# GETTERS
 	def getHour(self):
 		return self.__hour
+	
+	def getMinute(self):
+		return self.__minute
