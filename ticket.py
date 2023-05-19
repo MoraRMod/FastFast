@@ -1,9 +1,6 @@
-from hour import Hour
-from date import Date
-
 class Ticket:
 	# Agrega datos por clase
-	def __init__(self, id = "", employee = "", hour = Hour(), date = Date(), productCode = "", product = "", methodPayment = "") -> None:
+	def __init__(self, id = "", employee = "", hour = None, date = None, productCode = "", product = "", methodPayment = "") -> None:
 		self.__id = id
 		self.__employee = employee
 		self.__hour = hour
@@ -30,8 +27,8 @@ class Ticket:
 		return {
 			"id": self.__id,
 			"employee": self.__employee,
-			"hour": self.__hour,
-			"date": self.__date,
+			"hour": self.__hour.toDict() if self.__hour else None,
+			"date": self.__date.toDict() if self.__date else None,
 			"productCode": self.__productCode,
 			"product": self.__product,
 			"methodPayment": self.__methodPayment,
