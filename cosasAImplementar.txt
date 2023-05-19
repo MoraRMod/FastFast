@@ -1,6 +1,0 @@
-Cosas a implementar en el proyecto:
-- Compresión y descompresión:
-	Para ello podemos utilizar los modulos:
-		- zlib.
-		- gzip.
-		- bz2.
