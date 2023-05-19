@@ -62,4 +62,6 @@ desEnBy = desencriptar(msg, clave)
 desEn = pickle.loads(desEnBy)
 '''
 
-#
+# Compresion
+comprimir(gerente)
+descomprimir('gerente.zip')
