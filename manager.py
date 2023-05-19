@@ -71,10 +71,21 @@ class Manager:
 			with open(ubicacion, 'r') as archivo:
 				lista = json.load(archivo)
 
-				self.__gerente = [[Hour(**hour), Date(**date), Product(**product), Supplier(**supplier), Client(**client), Employee(**employee), Ticket(**ticket), Bill(**bill)] for hour, date, product, supplier, client, employee, ticket, bill in lista]
+				self.__gerente = [
+					[
+						Hour(element[2]['hour'], element[2]['minute']),
+						Date(element[1]['day'], element[1]['month'], element[1]['year']),
+						Product(element[3]['stock'], element[3]['unitaryValue'], element[3]['name'], element[3]['code']),
+						Supplier(element[4]['name'], element[4]['address'], element[4]['mail'], element[4]['phoneNumber']),
+						Client(element[0]['id'], element[0]['name'], element[0]['rfc'], element[0]['phoneNumber'], element[0]['mail']),
+						Employee(element[5]['id'], element[5]['birthday'], element[5]['name'], element[5]['address'], element[5]['rfc'], element[5]['mail'], element[5]['phoneNumber']),
+						Ticket(element[6]['id'], element[6]['employee'], element[6]['hour'], element[6]['date'], element[6]['productCode'], element[6]['product'], element[6]['methodPayment']),
+						Bill(element[7]['broadcastHour'], element[7]['broadcastDate'], element[7]['nameEmployee'], element[7]['nameProduct'], element[7]['nameClient'])
+					]
+					for element in lista
+				]
 
 				return 1
 		except Exception as e:
 			print(f"Error al abrir archivo: {e}")
-            
 			return 0
