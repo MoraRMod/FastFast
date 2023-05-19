@@ -1,5 +1,3 @@
-from date import Date
-
 class Employee:
 	# Agrega datos por clase
 	def __init__(self, id = "", birthday = None, name = "", address = "", rfc = "", mail = "", phoneNumber = "") -> None:
