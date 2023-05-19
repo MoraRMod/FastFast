@@ -20,6 +20,7 @@ while index <= 0:
 
 	index += 1
 
+gerente.guardar('registros.json')
 gerente.abrir('registros.json')
 
 gerente.mostrar()
