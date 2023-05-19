@@ -2,7 +2,7 @@ from date import Date
 
 class Employee:
 	# Agrega datos por clase
-	def __init__(self, id = "", birthday = Date(), name = "", address = "", rfc = "", mail = "", phoneNumber = "") -> None:
+	def __init__(self, id = "", birthday = None, name = "", address = "", rfc = "", mail = "", phoneNumber = "") -> None:
 		self.__id = id
 		self.__birthday = birthday
 		self.__name = name
@@ -28,7 +28,7 @@ class Employee:
 	def toDict(self):
 		return {
 			"id": self.__id,
-			"birthday": self.__birthday,
+			"birthday": self.__birthday.toDict() if self.__birthday else None,
 			"name": self.__name,
 			"address": self.__address,
 			"rfc": self.__rfc,
