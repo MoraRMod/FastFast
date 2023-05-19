@@ -1,10 +1,4 @@
 Cosas a implementar en el proyecto:
-- Encriptación y desencriptación:
-	Para ello podemos hacer uso de varias librerias como lo son:
-		- hashlib.
-		- cryptography.
-		- fernet.
-
 - Compresión y descompresión:
 	Para ello podemos utilizar los modulos:
 		- zlib.
