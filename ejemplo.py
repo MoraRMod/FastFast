@@ -20,6 +20,7 @@ while index <= 1:
 		
 	index += 1
 
+'''
 id = '102364'
 eliminarRegistro(gerente, id)
 
@@ -27,6 +28,7 @@ print('\n\n')
 print('\n\n')
 
 gerente.mostrar()
+'''
 
 '''
 id_modificar = '102364'
