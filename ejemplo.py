@@ -2,25 +2,30 @@ from modules import *
 
 # Registros de prueba
 gerente = Manager()
-productos = []
+productos = []  # Lista para almacenar los productos agregados
+
 index = 0
-
 while index <= 1:
-    # Registros de longitud fija y variable
-    cliente = Client('102364', 'Omar', 'DOJA98DHHF9', '56 4651 7427', 'ralerwip@gmail.com')
-    fecha = Date('17', '05', '2023')
-    hora = Hour('09', '45')
-    producto = Product('95', '17', 'Takis', '0110111011')
-    productos.append(producto)  # Agregar el objeto Product directamente a la lista
-    proveedor = Supplier('Barcel', 'Primavera #63', 'ayudabarcel@ayuda.com', '54 8499 0008')
-    empleado = Employee('948367', fecha, 'Daniel', '5 de mayo #92', 'KAJN15ENMI4', 'soyDani@gmail.com', '33 1594 8269')
-    recibo = Ticket('492816', empleado.getName(), hora, fecha, producto.getCode(), producto.getName(), producto.getUnitaryValue(), 'Tarjeta de crédito')
-    prueba = Bill(hora, fecha, empleado.getName(), producto.getName(), cliente.getName())
-    gerente.agregar([cliente, fecha, hora, producto, proveedor, empleado, recibo, prueba])
+	# Registros de longitud fija y variable
+	cliente = Client('102364', 'Omar', 'DOJA98DHHF9', '56 4651 7427', 'ralerwip@gmail.com')
+	fecha = Date('17', '05', '2023')
+	hora = Hour('09', '45')
+	producto = Product('95', '17', 'Takis', '0110111011')
+	productos.append(producto)  # Agregar el objeto Product directamente a la lista
+	proveedor = Supplier('Barcel', 'Primavera #63', 'ayudabarcel@ayuda.com', '54 8499 0008')
+	empleado = Employee('948367', fecha, 'Daniel', '5 de mayo #92', 'KAJN15ENMI4', 'soyDani@gmail.com', '33 1594 8269')
+	recibo = Ticket('492816', empleado.getName(), hora, fecha, producto.getCode(), producto.getName(), producto.getUnitaryValue(), 'Tarjeta de crédito')
+	prueba = Bill(hora, fecha, empleado.getName(), producto.getName(), cliente.getName())
+	gerente.agregar([cliente, fecha, hora, producto, proveedor, empleado, recibo, prueba])
 
-    index += 1
+	index += 1
 
-gerente.generarTicketCompra('123456', empleado.getName(), hora, fecha, productos, 'Tarjeta de crédito')
+print("Productos agregados:")
+for producto in productos:
+    print(f"Código: {producto.getCode()}, Nombre: {producto.getName()}, Precio: {producto.getUnitaryValue()}")
+
+# Generar el ticket de compra
+generarTicket('123456', empleado.getName(), hora, fecha, productos, 'Tarjeta de crédito')
 
 
 '''
