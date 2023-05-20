@@ -33,7 +33,19 @@ class Manager:
 				self.__gerente[i] = registro
 				break
 	
-	def eliminarRegistro(self, registro):
+	def actualizarProducto(self, registro):
+		for i in range(len(self.__gerente)):
+			if self.__gerente[i][3] == registro[3]:
+				self.__gerente[i] = registro
+				break
+	
+	def actualizarProoveedor(self, registro):
+		for i in range(len(self.__gerente)):
+			if self.__gerente[i][4] == registro[4]:
+				self.__gerente[i] = registro
+				break
+	
+	def eliminar(self, registro):
 		self.__gerente.remove(registro)
 
 
