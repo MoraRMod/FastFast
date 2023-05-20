@@ -16,6 +16,9 @@ from serialization import serializar, deserializar
 from dispersion import dispersar, mostrarDispersado
 from encryption import generarClave, encriptar, desencriptar
 from compression import comprimir, descomprimir
+from searches import findID, findName
+from modifications import modificarID
+from delete import eliminarRegistro
 
 # Librerias de ayuda
 from cryptography.fernet import Fernet
