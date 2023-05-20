@@ -27,6 +27,16 @@ class Manager:
 
 			print("\n")
 
+	def actualizarRegistro(self, registro):
+		for i in range(len(self.__gerente)):
+			if self.__gerente[i][0] == registro[0]:
+				self.__gerente[i] = registro
+				break
+	
+	def eliminarRegistro(self, registro):
+		self.__gerente.remove(registro)
+
+
 	def getIndex(self, index):
 		return self.__gerente[index]
 
@@ -63,7 +73,7 @@ class Manager:
 				return 1
 		except Exception as e:
 			print(f"Error al guardar archivo: {e}")
-            
+			
 			return 0
 		
 	def abrir(self, ubicacion):
