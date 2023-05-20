@@ -51,6 +51,31 @@ class Manager:
 
 	def getIndex(self, index):
 		return self.__gerente[index]
+	
+	def generarTicketCompra(self, id, empleado, hora, fecha, codigoProducto, producto, precioProducto, metodoPago):
+		ticket = Ticket()
+		ticket.setID(id)
+		ticket.setEmployee(empleado)
+		ticket.setHour(hora)
+		ticket.setDate(fecha)
+		ticket.setProductCode(codigoProducto)
+		ticket.setProductName(producto)
+		ticket.setProductValue(precioProducto)
+		ticket.setMethodPayment(metodoPago)
+		
+		# Imprimir el ticket con formato
+		print("******************************")
+		print("         TICKET DE COMPRA      ")
+		print("******************************")
+		print(f"ID: {ticket.getID()}")
+		print(f"Empleado: {ticket.getEmployee()}")
+		print(f"Hora: {ticket.getHour()}")
+		print(f"Fecha: {ticket.getDate()}")
+		print(f"Código del producto: {ticket.getProductCode()}")
+		print(f"Producto: {ticket.getProductName()}")
+		print(f"Precio: {ticket.getProductValue()}")
+		print(f"Método de pago: {ticket.getMethodPayment()}")
+		print("******************************")
 
 	def __len__(self):
 		return(
