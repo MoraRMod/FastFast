@@ -52,18 +52,21 @@ class Manager:
 	def getIndex(self, index):
 		return self.__gerente[index]
 	
-	def generarTicketCompra(self, id, empleado, hora, fecha, codigoProducto, producto, precioProducto, metodoPago):
+	def generarTicketCompra(self, id, empleado, hora, fecha, productos, metodoPago):
 		ticket = Ticket()
+		recibo = ticket
+		listaProductos = []
+
 		ticket.setID(id)
 		ticket.setEmployee(empleado)
 		ticket.setHour(hora)
 		ticket.setDate(fecha)
-		ticket.setProductCode(codigoProducto)
-		ticket.setProductName(producto)
-		ticket.setProductValue(precioProducto)
+		for producto in productos:
+			listaProductos.append(producto)
+			recibo.addProduct(producto.getCode(), producto.getName(), producto.getUnitaryValue())
+
 		ticket.setMethodPayment(metodoPago)
-		
-		# Imprimir el ticket con formato
+
 		print("******************************")
 		print("         TICKET DE COMPRA      ")
 		print("******************************")
@@ -71,9 +74,11 @@ class Manager:
 		print(f"Empleado: {ticket.getEmployee()}")
 		print(f"Hora: {ticket.getHour()}")
 		print(f"Fecha: {ticket.getDate()}")
-		print(f"Código del producto: {ticket.getProductCode()}")
-		print(f"Producto: {ticket.getProductName()}")
-		print(f"Precio: {ticket.getProductValue()}")
+		for producto in recibo.getProducts():
+			print(f"Código del producto: {producto.getCode()}")
+			print(f"Producto: {producto.getName()}")
+			print(f"Precio: {producto.getUnitaryValue()}")
+			print("----------------------------")
 		print(f"Método de pago: {ticket.getMethodPayment()}")
 		print("******************************")
 
