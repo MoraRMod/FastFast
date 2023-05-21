@@ -1,0 +1,22 @@
+def generarTicket(id, empleado, hora, fecha, productos, metodoPago):
+	print("************************************")
+	print("         TICKET DE COMPRA      ")
+	print("************************************")
+	print(f"ID: {id}")
+	print(f"Empleado: {empleado}")
+	print(f"Hora: {hora}")
+	print(f"Fecha: {fecha}")
+	print("----------------------------")
+	total = 0
+	for producto in productos:
+		codigo = producto.getCode()
+		nombre = producto.getName()
+		precio = int(producto.getUnitaryValue())
+		print(f"Código del producto: {codigo}")
+		print(f"Producto: {nombre}")
+		print(f"Precio: {precio}")
+		print("----------------------------")
+		total += int(precio)
+	print(f"Total: {total}")
+	print(f"Método de pago: {metodoPago}")
+	print("************************************")
