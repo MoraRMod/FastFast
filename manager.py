@@ -51,6 +51,36 @@ class Manager:
 
 	def getIndex(self, index):
 		return self.__gerente[index]
+	
+	def generarTicketCompra(self, id, empleado, hora, fecha, productos, metodoPago):
+		ticket = Ticket()
+		recibo = ticket
+		listaProductos = []
+
+		ticket.setID(id)
+		ticket.setEmployee(empleado)
+		ticket.setHour(hora)
+		ticket.setDate(fecha)
+		for producto in productos:
+			listaProductos.append(producto)
+			recibo.addProduct(producto.getCode(), producto.getName(), producto.getUnitaryValue())
+
+		ticket.setMethodPayment(metodoPago)
+
+		print("******************************")
+		print("         TICKET DE COMPRA      ")
+		print("******************************")
+		print(f"ID: {ticket.getID()}")
+		print(f"Empleado: {ticket.getEmployee()}")
+		print(f"Hora: {ticket.getHour()}")
+		print(f"Fecha: {ticket.getDate()}")
+		for producto in recibo.getProducts():
+			print(f"Código del producto: {producto.getCode()}")
+			print(f"Producto: {producto.getName()}")
+			print(f"Precio: {producto.getUnitaryValue()}")
+			print("----------------------------")
+		print(f"Método de pago: {ticket.getMethodPayment()}")
+		print("******************************")
 
 	def __len__(self):
 		return(
@@ -101,8 +131,8 @@ class Manager:
 						Supplier(element[4]['name'], element[4]['address'], element[4]['mail'], element[4]['phoneNumber']),
 						Client(element[0]['id'], element[0]['name'], element[0]['rfc'], element[0]['phoneNumber'], element[0]['mail']),
 						Employee(element[5]['id'], element[5]['birthday'], element[5]['name'], element[5]['address'], element[5]['rfc'], element[5]['mail'], element[5]['phoneNumber']),
-						Ticket(element[6]['id'], element[6]['employee'], element[6]['hour'], element[6]['date'], element[6]['productCode'], element[6]['productName'], element[6]['productValue'],element[6]['methodPayment']),
-						Bill(element[7]['broadcastHour'], element[7]['broadcastDate'], element[7]['employee'], element[7]['product'], element[7]['client'])
+						Ticket(element[6]['id'], element[6]['employee'], element[6]['hour'], element[6]['date'], element[6]['productCode'], element[6]['product'], element[6]['methodPayment']),
+						Bill(element[7]['broadcastHour'], element[7]['broadcastDate'], element[7]['nameEmployee'], element[7]['nameProduct'], element[7]['nameClient'])
 					]
 					for element in lista
 				]

@@ -19,7 +19,6 @@ from compression import comprimir, descomprimir
 from searches import findID, findName, findCode, findNameSupplier
 from modifications import modificarID, modificarCode, modificarProoveedor
 from delete import eliminarRegistro, eliminarCode, eliminarProoveedor
-from generator import generarTicket, generarFactura
 
 # Librerias de ayuda
 from cryptography.fernet import Fernet

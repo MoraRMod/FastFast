@@ -9,6 +9,7 @@ class Ticket:
 		self.__productName = productName
 		self.__productValue = productValue
 		self.__methodPayment = methodPayment
+		self.productos = [(productCode, productName, productValue)]
 	# Comparacion en caso de ordenamiento por ID
 	def __lt__(self, other):
 		self.__id < other.__id
@@ -61,6 +62,9 @@ class Ticket:
 
 	def setMethodPayment(self, methodPayment):
 		self.__methodPayment = methodPayment
+
+	def addProduct(self, codigo, nombre, precio):
+		self.productos.append((codigo, nombre, precio))
 	
 	# GETTERS
 	def getID(self):
@@ -86,3 +90,6 @@ class Ticket:
 	
 	def getMethodPayment(self):
 		return self.__methodPayment
+	
+	def getProducts(self):
+		return self.productos
