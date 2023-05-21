@@ -101,8 +101,8 @@ class Manager:
 						Supplier(element[4]['name'], element[4]['address'], element[4]['mail'], element[4]['phoneNumber']),
 						Client(element[0]['id'], element[0]['name'], element[0]['rfc'], element[0]['phoneNumber'], element[0]['mail']),
 						Employee(element[5]['id'], element[5]['birthday'], element[5]['name'], element[5]['address'], element[5]['rfc'], element[5]['mail'], element[5]['phoneNumber']),
-						Ticket(element[6]['id'], element[6]['employee'], element[6]['hour'], element[6]['date'], element[6]['productCode'], element[6]['product'], element[6]['methodPayment']),
-						Bill(element[7]['broadcastHour'], element[7]['broadcastDate'], element[7]['nameEmployee'], element[7]['nameProduct'], element[7]['nameClient'])
+						Ticket(element[6]['id'], element[6]['employee'], element[6]['hour'], element[6]['date'], element[6]['productCode'], element[6]['productName'], element[6]['productValue'],element[6]['methodPayment']),
+						Bill(element[7]['broadcastHour'], element[7]['broadcastDate'], element[7]['employee'], element[7]['product'], element[7]['client'])
 					]
 					for element in lista
 				]
