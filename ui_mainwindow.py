@@ -919,6 +919,162 @@ class Ui_MainWindow(object):
         self.gridLayout_10.addItem(self.verticalSpacer_4, 0, 0, 1, 1)
 
         self.multipleMenu.addWidget(self.defaultPage)
+        self.addCliente_page = QWidget()
+        self.addCliente_page.setObjectName(u"addCliente_page")
+        self.gridLayout_9 = QGridLayout(self.addCliente_page)
+        self.gridLayout_9.setSpacing(0)
+        self.gridLayout_9.setObjectName(u"gridLayout_9")
+        self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.proveedorWidget_2 = QWidget(self.addCliente_page)
+        self.proveedorWidget_2.setObjectName(u"proveedorWidget_2")
+        self.proveedorWidget_2.setMinimumSize(QSize(0, 58))
+        self.proveedorWidget_2.setMaximumSize(QSize(16777215, 58))
+        self.proveedorWidget_2.setStyleSheet(u"")
+        self.horizontalLayout_9 = QHBoxLayout(self.proveedorWidget_2)
+        self.horizontalLayout_9.setObjectName(u"horizontalLayout_9")
+        self.saveCliente = QPushButton(self.proveedorWidget_2)
+        self.saveCliente.setObjectName(u"saveCliente")
+        self.saveCliente.setEnabled(False)
+        self.saveCliente.setMinimumSize(QSize(40, 40))
+        self.saveCliente.setAutoFillBackground(False)
+        self.saveCliente.setStyleSheet(u"QPushButton {\n"
+"	pading 8px 0 8px 15px;\n"
+"}")
+        icon14 = QIcon()
+        icon14.addFile(u":/icons/icon/save.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon14.addFile(u":/icons/icon/saveOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.saveCliente.setIcon(icon14)
+        self.saveCliente.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_9.addWidget(self.saveCliente)
+
+        self.cancelOpCliente = QPushButton(self.proveedorWidget_2)
+        self.cancelOpCliente.setObjectName(u"cancelOpCliente")
+        self.cancelOpCliente.setMinimumSize(QSize(40, 40))
+        icon15 = QIcon()
+        icon15.addFile(u":/icons/icon/exit.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.cancelOpCliente.setIcon(icon15)
+        self.cancelOpCliente.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_9.addWidget(self.cancelOpCliente)
+
+        self.horizontalSpacer_9 = QSpacerItem(505, 17, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_9.addItem(self.horizontalSpacer_9)
+
+
+        self.gridLayout_9.addWidget(self.proveedorWidget_2, 0, 0, 1, 1)
+
+        self.addCliente_Widget = QWidget(self.addCliente_page)
+        self.addCliente_Widget.setObjectName(u"addCliente_Widget")
+        self.addCliente_Widget.setToolTipDuration(5)
+        self.addCliente_Widget.setStyleSheet(u"QWidget#addCliente_Widget{\n"
+"	background-image: url(:/icons/icon/fastfast.ico);\n"
+"	background-repeat: no-repeat;\n"
+"    background-position: center center;\n"
+"	background-origin: content;\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+        self.gridLayout_11 = QGridLayout(self.addCliente_Widget)
+        self.gridLayout_11.setObjectName(u"gridLayout_11")
+        self.gridLayout_11.setContentsMargins(0, -1, 0, -1)
+        self.label_5 = QLabel(self.addCliente_Widget)
+        self.label_5.setObjectName(u"label_5")
+
+        self.gridLayout_11.addWidget(self.label_5, 4, 1, 1, 2)
+
+        self.label_3 = QLabel(self.addCliente_Widget)
+        self.label_3.setObjectName(u"label_3")
+
+        self.gridLayout_11.addWidget(self.label_3, 2, 1, 1, 1)
+
+        self.label_4 = QLabel(self.addCliente_Widget)
+        self.label_4.setObjectName(u"label_4")
+
+        self.gridLayout_11.addWidget(self.label_4, 3, 1, 1, 1)
+
+        self.horizontalSpacer_11 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.gridLayout_11.addItem(self.horizontalSpacer_11, 2, 0, 1, 1)
+
+        self.lineEdit_2 = QLineEdit(self.addCliente_Widget)
+        self.lineEdit_2.setObjectName(u"lineEdit_2")
+
+        self.gridLayout_11.addWidget(self.lineEdit_2, 2, 2, 1, 2)
+
+        self.verticalSpacer_6 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_11.addItem(self.verticalSpacer_6, 5, 3, 1, 1)
+
+        self.lineEdit_3 = QLineEdit(self.addCliente_Widget)
+        self.lineEdit_3.setObjectName(u"lineEdit_3")
+
+        self.gridLayout_11.addWidget(self.lineEdit_3, 3, 2, 1, 2)
+
+        self.lineEdit_4 = QLineEdit(self.addCliente_Widget)
+        self.lineEdit_4.setObjectName(u"lineEdit_4")
+
+        self.gridLayout_11.addWidget(self.lineEdit_4, 4, 3, 1, 1)
+
+        self.verticalSpacer_5 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_11.addItem(self.verticalSpacer_5, 5, 1, 1, 1)
+
+        self.horizontalSpacer_12 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.gridLayout_11.addItem(self.horizontalSpacer_12, 2, 4, 1, 1)
+
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_6.addItem(self.horizontalSpacer)
+
+        self.label_6 = QLabel(self.addCliente_Widget)
+        self.label_6.setObjectName(u"label_6")
+
+        self.horizontalLayout_6.addWidget(self.label_6)
+
+        self.ID_cliente = QLineEdit(self.addCliente_Widget)
+        self.ID_cliente.setObjectName(u"ID_cliente")
+        self.ID_cliente.setEnabled(False)
+        self.ID_cliente.setMaximumSize(QSize(50, 16777215))
+        self.ID_cliente.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_6.addWidget(self.ID_cliente)
+
+        self.horizontalSpacer_6 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_6.addItem(self.horizontalSpacer_6)
+
+        self.label_2 = QLabel(self.addCliente_Widget)
+        self.label_2.setObjectName(u"label_2")
+
+        self.horizontalLayout_6.addWidget(self.label_2)
+
+        self.lineEdit = QLineEdit(self.addCliente_Widget)
+        self.lineEdit.setObjectName(u"lineEdit")
+
+        self.horizontalLayout_6.addWidget(self.lineEdit)
+
+        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.MinimumExpanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_6.addItem(self.horizontalSpacer_10)
+
+
+        self.gridLayout_11.addLayout(self.horizontalLayout_6, 0, 0, 1, 5)
+
+        self.line_2 = QFrame(self.addCliente_Widget)
+        self.line_2.setObjectName(u"line_2")
+        self.line_2.setFrameShape(QFrame.HLine)
+        self.line_2.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_11.addWidget(self.line_2, 1, 0, 1, 5)
+
+
+        self.gridLayout_9.addWidget(self.addCliente_Widget, 1, 0, 1, 1)
+
+        self.multipleMenu.addWidget(self.addCliente_page)
 
         self.gridLayout.addWidget(self.multipleMenu, 0, 0, 1, 1)
 
@@ -1173,5 +1329,22 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(shortcut)
         self.label.setText("")
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Seleccione una opcion del lado izquiero para empezar.", None))
+#if QT_CONFIG(tooltip)
+        self.saveCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Guardar Cliente (F3)", None))
+#endif // QT_CONFIG(tooltip)
+        self.saveCliente.setText("")
+#if QT_CONFIG(shortcut)
+        self.saveCliente.setShortcut(QCoreApplication.translate("MainWindow", u"F3", None))
+#endif // QT_CONFIG(shortcut)
+#if QT_CONFIG(tooltip)
+        self.cancelOpCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Cancelar", None))
+#endif // QT_CONFIG(tooltip)
+        self.cancelOpCliente.setText("")
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Correo Electr\u00f3nico:", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"R.F.C.:", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono:", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"ID:", None))
+        self.ID_cliente.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"Nombre:", None))
     # retranslateUi
 
