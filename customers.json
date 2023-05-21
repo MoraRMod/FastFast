@@ -1,0 +1,30 @@
+[
+     {
+          "id": "1",
+          "name": "VENTA AL PUBLICO",
+          "rfc": "-",
+          "phoneNumber": "-",
+          "mail": "atencionalcliente@fastfast.com.mx"
+     },
+     {
+          "id": "2",
+          "name": "NESTOR DAVID MIRELES VEGA",
+          "rfc": "MIVN030402J7I",
+          "phoneNumber": "331 756 5751",
+          "mail": "nestor.mireles.vega@gmail.com"
+     },
+     {
+          "id": "4",
+          "name": "NESTOR DAVID MIRELES VEGA",
+          "rfc": "MIVN030402J7I",
+          "phoneNumber": "331 756 5751",
+          "mail": "nestor.mireles.vega@gmail.com"
+     },
+     {
+          "id": "5",
+          "name": "NESTOR DAVID MIRELES VEGA",
+          "rfc": "MIVN030402J7I",
+          "phoneNumber": "331 756 5751",
+          "mail": "nestor.mireles.vega@gmail.com"
+     }
+]

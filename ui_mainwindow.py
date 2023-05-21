@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(939, 621)
         icon = QIcon()
-        icon.addFile(u":/icons/icon/fastfast.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/icon/logoIcon.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setIconSize(QSize(50, 24))
         self.centralwidget = QWidget(MainWindow)
@@ -46,7 +46,9 @@ class Ui_MainWindow(object):
 "	width: 30px;\n"
 "	height: 50px;\n"
 "}")
-        self.iconHome.setIcon(icon)
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icon/fastfast.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.iconHome.setIcon(icon1)
         self.iconHome.setIconSize(QSize(60, 60))
         self.iconHome.setCheckable(True)
         self.iconHome.setAutoExclusive(False)
@@ -69,10 +71,10 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/icon/bill.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon1.addFile(u":/icons/icon/bill_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconFactura.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icon/bill.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/icons/icon/bill_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconFactura.setIcon(icon2)
         self.iconFactura.setIconSize(QSize(30, 30))
         self.iconFactura.setCheckable(True)
         self.iconFactura.setAutoExclusive(True)
@@ -90,10 +92,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/icon/ticket.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon2.addFile(u":/icons/icon/ticket_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconPedido.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icon/ticket.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/icons/icon/ticket_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconPedido.setIcon(icon3)
         self.iconPedido.setIconSize(QSize(30, 30))
         self.iconPedido.setCheckable(True)
         self.iconPedido.setAutoExclusive(True)
@@ -111,10 +113,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icon/products.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon3.addFile(u":/icons/icon/products_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconAlimento.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icon/products.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/icons/icon/products_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconAlimento.setIcon(icon4)
         self.iconAlimento.setIconSize(QSize(30, 30))
         self.iconAlimento.setCheckable(True)
         self.iconAlimento.setAutoExclusive(True)
@@ -132,10 +134,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icon/customer.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon4.addFile(u":/icons/icon/customer_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconClientes.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icon/customer.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/icons/icon/customer_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconClientes.setIcon(icon5)
         self.iconClientes.setIconSize(QSize(30, 30))
         self.iconClientes.setCheckable(True)
         self.iconClientes.setAutoExclusive(True)
@@ -153,10 +155,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icon/employee.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon5.addFile(u":/icons/icon/employee_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconEmpleados.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icon/employee.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u":/icons/icon/employee_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconEmpleados.setIcon(icon6)
         self.iconEmpleados.setIconSize(QSize(30, 30))
         self.iconEmpleados.setCheckable(True)
         self.iconEmpleados.setAutoExclusive(True)
@@ -174,10 +176,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/icon/supplier.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon6.addFile(u":/icons/icon/supplier_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconProveedor.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icon/supplier.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u":/icons/icon/supplier_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconProveedor.setIcon(icon7)
         self.iconProveedor.setIconSize(QSize(30, 30))
         self.iconProveedor.setCheckable(True)
         self.iconProveedor.setAutoExclusive(True)
@@ -227,7 +229,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullFactura.setIcon(icon1)
+        self.fullFactura.setIcon(icon2)
         self.fullFactura.setIconSize(QSize(20, 20))
         self.fullFactura.setCheckable(True)
         self.fullFactura.setAutoExclusive(True)
@@ -254,7 +256,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullPedido.setIcon(icon2)
+        self.fullPedido.setIcon(icon3)
         self.fullPedido.setIconSize(QSize(20, 20))
         self.fullPedido.setCheckable(True)
         self.fullPedido.setAutoExclusive(True)
@@ -281,7 +283,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullAlimento.setIcon(icon3)
+        self.fullAlimento.setIcon(icon4)
         self.fullAlimento.setIconSize(QSize(20, 20))
         self.fullAlimento.setCheckable(True)
         self.fullAlimento.setAutoExclusive(True)
@@ -308,7 +310,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullCliente.setIcon(icon4)
+        self.fullCliente.setIcon(icon5)
         self.fullCliente.setIconSize(QSize(20, 20))
         self.fullCliente.setCheckable(True)
         self.fullCliente.setAutoExclusive(True)
@@ -335,7 +337,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullEmpleado.setIcon(icon5)
+        self.fullEmpleado.setIcon(icon6)
         self.fullEmpleado.setIconSize(QSize(20, 20))
         self.fullEmpleado.setCheckable(True)
         self.fullEmpleado.setAutoExclusive(True)
@@ -362,7 +364,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullProveedor.setIcon(icon6)
+        self.fullProveedor.setIcon(icon7)
         self.fullProveedor.setIconSize(QSize(20, 20))
         self.fullProveedor.setCheckable(True)
         self.fullProveedor.setAutoExclusive(True)
@@ -385,7 +387,7 @@ class Ui_MainWindow(object):
 "	width: 30px;\n"
 "	height: 50px;\n"
 "}")
-        self.fullHome.setIcon(icon)
+        self.fullHome.setIcon(icon1)
         self.fullHome.setIconSize(QSize(60, 60))
         self.fullHome.setCheckable(True)
         self.fullHome.setAutoExclusive(False)
@@ -434,9 +436,9 @@ class Ui_MainWindow(object):
         self.addFactura.setMinimumSize(QSize(40, 40))
         self.addFactura.setAutoFillBackground(False)
         self.addFactura.setStyleSheet(u"")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/icon/add.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.addFactura.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/icon/add.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.addFactura.setIcon(icon8)
         self.addFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.addFactura)
@@ -445,10 +447,10 @@ class Ui_MainWindow(object):
         self.modifyFactura.setObjectName(u"modifyFactura")
         self.modifyFactura.setEnabled(False)
         self.modifyFactura.setMinimumSize(QSize(40, 40))
-        icon8 = QIcon()
-        icon8.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon8.addFile(u":/icons/icon/modifyOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
-        self.modifyFactura.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon9.addFile(u":/icons/icon/modifyOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.modifyFactura.setIcon(icon9)
         self.modifyFactura.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_2.addWidget(self.modifyFactura)
@@ -457,10 +459,10 @@ class Ui_MainWindow(object):
         self.deleteFactura.setObjectName(u"deleteFactura")
         self.deleteFactura.setEnabled(False)
         self.deleteFactura.setMinimumSize(QSize(40, 40))
-        icon9 = QIcon()
-        icon9.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon9.addFile(u":/icons/icon/cancelOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
-        self.deleteFactura.setIcon(icon9)
+        icon10 = QIcon()
+        icon10.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon10.addFile(u":/icons/icon/cancelOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.deleteFactura.setIcon(icon10)
         self.deleteFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.deleteFactura)
@@ -475,9 +477,9 @@ class Ui_MainWindow(object):
         self.searchFactura = QPushButton(self.facturaWidget)
         self.searchFactura.setObjectName(u"searchFactura")
         self.searchFactura.setMinimumSize(QSize(40, 40))
-        icon10 = QIcon()
-        icon10.addFile(u":/icons/icon/search.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.searchFactura.setIcon(icon10)
+        icon11 = QIcon()
+        icon11.addFile(u":/icons/icon/search.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.searchFactura.setIcon(icon11)
         self.searchFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.searchFactura)
@@ -485,9 +487,9 @@ class Ui_MainWindow(object):
         self.cleanFactura = QPushButton(self.facturaWidget)
         self.cleanFactura.setObjectName(u"cleanFactura")
         self.cleanFactura.setMinimumSize(QSize(40, 40))
-        icon11 = QIcon()
-        icon11.addFile(u":/icons/icon/reload.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.cleanFactura.setIcon(icon11)
+        icon12 = QIcon()
+        icon12.addFile(u":/icons/icon/reload.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.cleanFactura.setIcon(icon12)
         self.cleanFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.cleanFactura)
@@ -519,7 +521,7 @@ class Ui_MainWindow(object):
         self.addPedido.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addPedido.setIcon(icon7)
+        self.addPedido.setIcon(icon8)
         self.addPedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.addPedido)
@@ -527,9 +529,9 @@ class Ui_MainWindow(object):
         self.modifyPedido = QPushButton(self.pedidoWidget)
         self.modifyPedido.setObjectName(u"modifyPedido")
         self.modifyPedido.setMinimumSize(QSize(40, 40))
-        icon12 = QIcon()
-        icon12.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.modifyPedido.setIcon(icon12)
+        icon13 = QIcon()
+        icon13.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.modifyPedido.setIcon(icon13)
         self.modifyPedido.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_3.addWidget(self.modifyPedido)
@@ -537,9 +539,9 @@ class Ui_MainWindow(object):
         self.deletePedido = QPushButton(self.pedidoWidget)
         self.deletePedido.setObjectName(u"deletePedido")
         self.deletePedido.setMinimumSize(QSize(40, 40))
-        icon13 = QIcon()
-        icon13.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.deletePedido.setIcon(icon13)
+        icon14 = QIcon()
+        icon14.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.deletePedido.setIcon(icon14)
         self.deletePedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.deletePedido)
@@ -554,7 +556,7 @@ class Ui_MainWindow(object):
         self.searchPedido = QPushButton(self.pedidoWidget)
         self.searchPedido.setObjectName(u"searchPedido")
         self.searchPedido.setMinimumSize(QSize(40, 40))
-        self.searchPedido.setIcon(icon10)
+        self.searchPedido.setIcon(icon11)
         self.searchPedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.searchPedido)
@@ -562,7 +564,7 @@ class Ui_MainWindow(object):
         self.cleanPedido = QPushButton(self.pedidoWidget)
         self.cleanPedido.setObjectName(u"cleanPedido")
         self.cleanPedido.setMinimumSize(QSize(40, 40))
-        self.cleanPedido.setIcon(icon11)
+        self.cleanPedido.setIcon(icon12)
         self.cleanPedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.cleanPedido)
@@ -600,7 +602,7 @@ class Ui_MainWindow(object):
         self.addAlimento.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addAlimento.setIcon(icon7)
+        self.addAlimento.setIcon(icon8)
         self.addAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.addAlimento)
@@ -608,7 +610,7 @@ class Ui_MainWindow(object):
         self.modifyAlimento = QPushButton(self.alimentosWidget)
         self.modifyAlimento.setObjectName(u"modifyAlimento")
         self.modifyAlimento.setMinimumSize(QSize(40, 40))
-        self.modifyAlimento.setIcon(icon12)
+        self.modifyAlimento.setIcon(icon13)
         self.modifyAlimento.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_4.addWidget(self.modifyAlimento)
@@ -616,7 +618,7 @@ class Ui_MainWindow(object):
         self.deleteAlimento = QPushButton(self.alimentosWidget)
         self.deleteAlimento.setObjectName(u"deleteAlimento")
         self.deleteAlimento.setMinimumSize(QSize(40, 40))
-        self.deleteAlimento.setIcon(icon13)
+        self.deleteAlimento.setIcon(icon14)
         self.deleteAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.deleteAlimento)
@@ -631,7 +633,7 @@ class Ui_MainWindow(object):
         self.searchAlimento = QPushButton(self.alimentosWidget)
         self.searchAlimento.setObjectName(u"searchAlimento")
         self.searchAlimento.setMinimumSize(QSize(40, 40))
-        self.searchAlimento.setIcon(icon10)
+        self.searchAlimento.setIcon(icon11)
         self.searchAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.searchAlimento)
@@ -639,7 +641,7 @@ class Ui_MainWindow(object):
         self.cleanAlimento = QPushButton(self.alimentosWidget)
         self.cleanAlimento.setObjectName(u"cleanAlimento")
         self.cleanAlimento.setMinimumSize(QSize(40, 40))
-        self.cleanAlimento.setIcon(icon11)
+        self.cleanAlimento.setIcon(icon12)
         self.cleanAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.cleanAlimento)
@@ -676,7 +678,7 @@ class Ui_MainWindow(object):
         self.addCliente.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addCliente.setIcon(icon7)
+        self.addCliente.setIcon(icon8)
         self.addCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.addCliente)
@@ -684,7 +686,7 @@ class Ui_MainWindow(object):
         self.modifyCliente = QPushButton(self.clientesWidget)
         self.modifyCliente.setObjectName(u"modifyCliente")
         self.modifyCliente.setMinimumSize(QSize(40, 40))
-        self.modifyCliente.setIcon(icon12)
+        self.modifyCliente.setIcon(icon13)
         self.modifyCliente.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_5.addWidget(self.modifyCliente)
@@ -692,7 +694,7 @@ class Ui_MainWindow(object):
         self.deleteCliente = QPushButton(self.clientesWidget)
         self.deleteCliente.setObjectName(u"deleteCliente")
         self.deleteCliente.setMinimumSize(QSize(40, 40))
-        self.deleteCliente.setIcon(icon13)
+        self.deleteCliente.setIcon(icon14)
         self.deleteCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.deleteCliente)
@@ -707,15 +709,32 @@ class Ui_MainWindow(object):
         self.searchCliente = QPushButton(self.clientesWidget)
         self.searchCliente.setObjectName(u"searchCliente")
         self.searchCliente.setMinimumSize(QSize(40, 40))
-        self.searchCliente.setIcon(icon10)
+        self.searchCliente.setIcon(icon11)
         self.searchCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.searchCliente)
 
+        self.ID_busqueda_label = QLabel(self.clientesWidget)
+        self.ID_busqueda_label.setObjectName(u"ID_busqueda_label")
+
+        self.horizontalLayout_5.addWidget(self.ID_busqueda_label)
+
+        self.buscarEmpleado_linea = QLineEdit(self.clientesWidget)
+        self.buscarEmpleado_linea.setObjectName(u"buscarEmpleado_linea")
+        self.buscarEmpleado_linea.setMinimumSize(QSize(100, 0))
+
+        self.horizontalLayout_5.addWidget(self.buscarEmpleado_linea)
+
+        self.busquedaClienteConfirm = QPushButton(self.clientesWidget)
+        self.busquedaClienteConfirm.setObjectName(u"busquedaClienteConfirm")
+        self.busquedaClienteConfirm.setIcon(icon11)
+
+        self.horizontalLayout_5.addWidget(self.busquedaClienteConfirm)
+
         self.cleanCliente = QPushButton(self.clientesWidget)
         self.cleanCliente.setObjectName(u"cleanCliente")
         self.cleanCliente.setMinimumSize(QSize(40, 40))
-        self.cleanCliente.setIcon(icon11)
+        self.cleanCliente.setIcon(icon12)
         self.cleanCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.cleanCliente)
@@ -752,7 +771,7 @@ class Ui_MainWindow(object):
         self.addEmpleado.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addEmpleado.setIcon(icon7)
+        self.addEmpleado.setIcon(icon8)
         self.addEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.addEmpleado)
@@ -760,7 +779,7 @@ class Ui_MainWindow(object):
         self.modifyEmpleado = QPushButton(self.empleadosWidget)
         self.modifyEmpleado.setObjectName(u"modifyEmpleado")
         self.modifyEmpleado.setMinimumSize(QSize(40, 40))
-        self.modifyEmpleado.setIcon(icon12)
+        self.modifyEmpleado.setIcon(icon13)
         self.modifyEmpleado.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_7.addWidget(self.modifyEmpleado)
@@ -768,7 +787,7 @@ class Ui_MainWindow(object):
         self.deleteEmpleado = QPushButton(self.empleadosWidget)
         self.deleteEmpleado.setObjectName(u"deleteEmpleado")
         self.deleteEmpleado.setMinimumSize(QSize(40, 40))
-        self.deleteEmpleado.setIcon(icon13)
+        self.deleteEmpleado.setIcon(icon14)
         self.deleteEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.deleteEmpleado)
@@ -783,7 +802,7 @@ class Ui_MainWindow(object):
         self.searchEmpleado = QPushButton(self.empleadosWidget)
         self.searchEmpleado.setObjectName(u"searchEmpleado")
         self.searchEmpleado.setMinimumSize(QSize(40, 40))
-        self.searchEmpleado.setIcon(icon10)
+        self.searchEmpleado.setIcon(icon11)
         self.searchEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.searchEmpleado)
@@ -791,7 +810,7 @@ class Ui_MainWindow(object):
         self.cleanEmpleado = QPushButton(self.empleadosWidget)
         self.cleanEmpleado.setObjectName(u"cleanEmpleado")
         self.cleanEmpleado.setMinimumSize(QSize(40, 40))
-        self.cleanEmpleado.setIcon(icon11)
+        self.cleanEmpleado.setIcon(icon12)
         self.cleanEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.cleanEmpleado)
@@ -803,10 +822,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout_7.addWidget(self.empleadosWidget, 0, 0, 1, 1)
 
-        self.tableView = QTableView(self.pageEmpleados)
-        self.tableView.setObjectName(u"tableView")
+        self.tablaEmpleado = QTableView(self.pageEmpleados)
+        self.tablaEmpleado.setObjectName(u"tablaEmpleado")
 
-        self.gridLayout_7.addWidget(self.tableView, 1, 0, 1, 1)
+        self.gridLayout_7.addWidget(self.tablaEmpleado, 1, 0, 1, 1)
 
         self.multipleMenu.addWidget(self.pageEmpleados)
         self.pageProveedores = QWidget()
@@ -828,7 +847,7 @@ class Ui_MainWindow(object):
         self.addProveedor.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addProveedor.setIcon(icon7)
+        self.addProveedor.setIcon(icon8)
         self.addProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.addProveedor)
@@ -836,7 +855,7 @@ class Ui_MainWindow(object):
         self.modifyProveedor = QPushButton(self.proveedorWidget)
         self.modifyProveedor.setObjectName(u"modifyProveedor")
         self.modifyProveedor.setMinimumSize(QSize(40, 40))
-        self.modifyProveedor.setIcon(icon12)
+        self.modifyProveedor.setIcon(icon13)
         self.modifyProveedor.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_8.addWidget(self.modifyProveedor)
@@ -844,7 +863,7 @@ class Ui_MainWindow(object):
         self.deleteProveedor = QPushButton(self.proveedorWidget)
         self.deleteProveedor.setObjectName(u"deleteProveedor")
         self.deleteProveedor.setMinimumSize(QSize(40, 40))
-        self.deleteProveedor.setIcon(icon13)
+        self.deleteProveedor.setIcon(icon14)
         self.deleteProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.deleteProveedor)
@@ -859,7 +878,7 @@ class Ui_MainWindow(object):
         self.searchProveedor = QPushButton(self.proveedorWidget)
         self.searchProveedor.setObjectName(u"searchProveedor")
         self.searchProveedor.setMinimumSize(QSize(40, 40))
-        self.searchProveedor.setIcon(icon10)
+        self.searchProveedor.setIcon(icon11)
         self.searchProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.searchProveedor)
@@ -867,7 +886,7 @@ class Ui_MainWindow(object):
         self.cleanProveedor = QPushButton(self.proveedorWidget)
         self.cleanProveedor.setObjectName(u"cleanProveedor")
         self.cleanProveedor.setMinimumSize(QSize(40, 40))
-        self.cleanProveedor.setIcon(icon11)
+        self.cleanProveedor.setIcon(icon12)
         self.cleanProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.cleanProveedor)
@@ -879,10 +898,10 @@ class Ui_MainWindow(object):
 
         self.gridLayout_8.addWidget(self.proveedorWidget, 0, 0, 1, 1)
 
-        self.tableWidget = QTableWidget(self.pageProveedores)
-        self.tableWidget.setObjectName(u"tableWidget")
+        self.tablaProveedor = QTableWidget(self.pageProveedores)
+        self.tablaProveedor.setObjectName(u"tablaProveedor")
 
-        self.gridLayout_8.addWidget(self.tableWidget, 1, 0, 1, 1)
+        self.gridLayout_8.addWidget(self.tablaProveedor, 1, 0, 1, 1)
 
         self.multipleMenu.addWidget(self.pageProveedores)
         self.defaultPage = QWidget()
@@ -940,10 +959,10 @@ class Ui_MainWindow(object):
         self.saveCliente.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        icon14 = QIcon()
-        icon14.addFile(u":/icons/icon/save.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon14.addFile(u":/icons/icon/saveOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
-        self.saveCliente.setIcon(icon14)
+        icon15 = QIcon()
+        icon15.addFile(u":/icons/icon/save.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon15.addFile(u":/icons/icon/saveOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.saveCliente.setIcon(icon15)
         self.saveCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_9.addWidget(self.saveCliente)
@@ -951,9 +970,9 @@ class Ui_MainWindow(object):
         self.cancelOpCliente = QPushButton(self.proveedorWidget_2)
         self.cancelOpCliente.setObjectName(u"cancelOpCliente")
         self.cancelOpCliente.setMinimumSize(QSize(40, 40))
-        icon15 = QIcon()
-        icon15.addFile(u":/icons/icon/exit.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.cancelOpCliente.setIcon(icon15)
+        icon16 = QIcon()
+        icon16.addFile(u":/icons/icon/exit.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.cancelOpCliente.setIcon(icon16)
         self.cancelOpCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_9.addWidget(self.cancelOpCliente)
@@ -961,6 +980,15 @@ class Ui_MainWindow(object):
         self.horizontalSpacer_9 = QSpacerItem(505, 17, QSizePolicy.Expanding, QSizePolicy.Minimum)
 
         self.horizontalLayout_9.addItem(self.horizontalSpacer_9)
+
+        self.label_8 = QLabel(self.proveedorWidget_2)
+        self.label_8.setObjectName(u"label_8")
+        font3 = QFont()
+        font3.setFamily(u"Bahnschrift Light Condensed")
+        font3.setPointSize(15)
+        self.label_8.setFont(font3)
+
+        self.horizontalLayout_9.addWidget(self.label_8)
 
 
         self.gridLayout_9.addWidget(self.proveedorWidget_2, 0, 0, 1, 1)
@@ -997,24 +1025,14 @@ class Ui_MainWindow(object):
 
         self.gridLayout_11.addItem(self.horizontalSpacer_11, 2, 0, 1, 1)
 
-        self.lineEdit_2 = QLineEdit(self.addCliente_Widget)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-
-        self.gridLayout_11.addWidget(self.lineEdit_2, 2, 2, 1, 2)
-
         self.verticalSpacer_6 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
         self.gridLayout_11.addItem(self.verticalSpacer_6, 5, 3, 1, 1)
 
-        self.lineEdit_3 = QLineEdit(self.addCliente_Widget)
-        self.lineEdit_3.setObjectName(u"lineEdit_3")
+        self.mailCliente = QLineEdit(self.addCliente_Widget)
+        self.mailCliente.setObjectName(u"mailCliente")
 
-        self.gridLayout_11.addWidget(self.lineEdit_3, 3, 2, 1, 2)
-
-        self.lineEdit_4 = QLineEdit(self.addCliente_Widget)
-        self.lineEdit_4.setObjectName(u"lineEdit_4")
-
-        self.gridLayout_11.addWidget(self.lineEdit_4, 4, 3, 1, 1)
+        self.gridLayout_11.addWidget(self.mailCliente, 4, 3, 1, 1)
 
         self.verticalSpacer_5 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
 
@@ -1052,12 +1070,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_6.addWidget(self.label_2)
 
-        self.lineEdit = QLineEdit(self.addCliente_Widget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.nameCliente = QLineEdit(self.addCliente_Widget)
+        self.nameCliente.setObjectName(u"nameCliente")
 
-        self.horizontalLayout_6.addWidget(self.lineEdit)
+        self.horizontalLayout_6.addWidget(self.nameCliente)
 
-        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.MinimumExpanding, QSizePolicy.Minimum)
+        self.horizontalSpacer_10 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
 
         self.horizontalLayout_6.addItem(self.horizontalSpacer_10)
 
@@ -1071,10 +1089,342 @@ class Ui_MainWindow(object):
 
         self.gridLayout_11.addWidget(self.line_2, 1, 0, 1, 5)
 
+        self.RFCCliente = QLineEdit(self.addCliente_Widget)
+        self.RFCCliente.setObjectName(u"RFCCliente")
+
+        self.gridLayout_11.addWidget(self.RFCCliente, 2, 2, 1, 2)
+
+        self.phoneCliente = QLineEdit(self.addCliente_Widget)
+        self.phoneCliente.setObjectName(u"phoneCliente")
+
+        self.gridLayout_11.addWidget(self.phoneCliente, 3, 2, 1, 2)
+
 
         self.gridLayout_9.addWidget(self.addCliente_Widget, 1, 0, 1, 1)
 
         self.multipleMenu.addWidget(self.addCliente_page)
+        self.modifyCliente_page = QWidget()
+        self.modifyCliente_page.setObjectName(u"modifyCliente_page")
+        self.gridLayout_12 = QGridLayout(self.modifyCliente_page)
+        self.gridLayout_12.setSpacing(0)
+        self.gridLayout_12.setObjectName(u"gridLayout_12")
+        self.gridLayout_12.setContentsMargins(0, 0, 0, 0)
+        self.proveedorWidget_3 = QWidget(self.modifyCliente_page)
+        self.proveedorWidget_3.setObjectName(u"proveedorWidget_3")
+        self.proveedorWidget_3.setMinimumSize(QSize(0, 58))
+        self.proveedorWidget_3.setMaximumSize(QSize(16777215, 58))
+        self.proveedorWidget_3.setStyleSheet(u"")
+        self.horizontalLayout_11 = QHBoxLayout(self.proveedorWidget_3)
+        self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
+        self.modifyClienteConfirm = QPushButton(self.proveedorWidget_3)
+        self.modifyClienteConfirm.setObjectName(u"modifyClienteConfirm")
+        self.modifyClienteConfirm.setEnabled(True)
+        self.modifyClienteConfirm.setMinimumSize(QSize(40, 40))
+        self.modifyClienteConfirm.setAutoFillBackground(False)
+        self.modifyClienteConfirm.setStyleSheet(u"QPushButton {\n"
+"	pading 8px 0 8px 15px;\n"
+"}")
+        self.modifyClienteConfirm.setIcon(icon13)
+        self.modifyClienteConfirm.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_11.addWidget(self.modifyClienteConfirm)
+
+        self.cancelModifyCliente = QPushButton(self.proveedorWidget_3)
+        self.cancelModifyCliente.setObjectName(u"cancelModifyCliente")
+        self.cancelModifyCliente.setMinimumSize(QSize(40, 40))
+        self.cancelModifyCliente.setIcon(icon16)
+        self.cancelModifyCliente.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_11.addWidget(self.cancelModifyCliente)
+
+        self.horizontalSpacer_18 = QSpacerItem(505, 17, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_11.addItem(self.horizontalSpacer_18)
+
+        self.label_15 = QLabel(self.proveedorWidget_3)
+        self.label_15.setObjectName(u"label_15")
+        self.label_15.setFont(font3)
+
+        self.horizontalLayout_11.addWidget(self.label_15)
+
+
+        self.gridLayout_12.addWidget(self.proveedorWidget_3, 0, 0, 1, 1)
+
+        self.modifyCliente_Widget = QWidget(self.modifyCliente_page)
+        self.modifyCliente_Widget.setObjectName(u"modifyCliente_Widget")
+        self.modifyCliente_Widget.setToolTipDuration(5)
+        self.modifyCliente_Widget.setStyleSheet(u"QWidget#modifyCliente_Widget{\n"
+"	background-image: url(:/icons/icon/fastfast.ico);\n"
+"	background-repeat: no-repeat;\n"
+"    background-position: center center;\n"
+"	background-origin: content;\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+        self.gridLayout_13 = QGridLayout(self.modifyCliente_Widget)
+        self.gridLayout_13.setSpacing(6)
+        self.gridLayout_13.setObjectName(u"gridLayout_13")
+        self.gridLayout_13.setContentsMargins(0, 9, 0, 9)
+        self.horizontalLayout_10 = QHBoxLayout()
+        self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
+        self.horizontalSpacer_15 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_15)
+
+        self.label_12 = QLabel(self.modifyCliente_Widget)
+        self.label_12.setObjectName(u"label_12")
+
+        self.horizontalLayout_10.addWidget(self.label_12)
+
+        self.ID_cliente_2 = QLineEdit(self.modifyCliente_Widget)
+        self.ID_cliente_2.setObjectName(u"ID_cliente_2")
+        self.ID_cliente_2.setEnabled(False)
+        self.ID_cliente_2.setMaximumSize(QSize(50, 16777215))
+        self.ID_cliente_2.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_10.addWidget(self.ID_cliente_2)
+
+        self.horizontalSpacer_16 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_16)
+
+        self.label_13 = QLabel(self.modifyCliente_Widget)
+        self.label_13.setObjectName(u"label_13")
+
+        self.horizontalLayout_10.addWidget(self.label_13)
+
+        self.nameCliente_2 = QLineEdit(self.modifyCliente_Widget)
+        self.nameCliente_2.setObjectName(u"nameCliente_2")
+
+        self.horizontalLayout_10.addWidget(self.nameCliente_2)
+
+        self.horizontalSpacer_17 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_10.addItem(self.horizontalSpacer_17)
+
+
+        self.gridLayout_13.addLayout(self.horizontalLayout_10, 0, 0, 1, 6)
+
+        self.phoneCliente_2 = QLineEdit(self.modifyCliente_Widget)
+        self.phoneCliente_2.setObjectName(u"phoneCliente_2")
+
+        self.gridLayout_13.addWidget(self.phoneCliente_2, 3, 3, 1, 2)
+
+        self.label_10 = QLabel(self.modifyCliente_Widget)
+        self.label_10.setObjectName(u"label_10")
+
+        self.gridLayout_13.addWidget(self.label_10, 2, 1, 1, 2)
+
+        self.horizontalSpacer_14 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.gridLayout_13.addItem(self.horizontalSpacer_14, 2, 5, 1, 1)
+
+        self.verticalSpacer_8 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_13.addItem(self.verticalSpacer_8, 5, 1, 1, 1)
+
+        self.mailCliente_2 = QLineEdit(self.modifyCliente_Widget)
+        self.mailCliente_2.setObjectName(u"mailCliente_2")
+
+        self.gridLayout_13.addWidget(self.mailCliente_2, 4, 4, 1, 1)
+
+        self.label_11 = QLabel(self.modifyCliente_Widget)
+        self.label_11.setObjectName(u"label_11")
+
+        self.gridLayout_13.addWidget(self.label_11, 3, 1, 1, 2)
+
+        self.verticalSpacer_7 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_13.addItem(self.verticalSpacer_7, 5, 4, 1, 1)
+
+        self.line_6 = QFrame(self.modifyCliente_Widget)
+        self.line_6.setObjectName(u"line_6")
+        self.line_6.setFrameShape(QFrame.HLine)
+        self.line_6.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_13.addWidget(self.line_6, 1, 0, 1, 6)
+
+        self.horizontalSpacer_13 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.gridLayout_13.addItem(self.horizontalSpacer_13, 2, 0, 1, 1)
+
+        self.label_9 = QLabel(self.modifyCliente_Widget)
+        self.label_9.setObjectName(u"label_9")
+
+        self.gridLayout_13.addWidget(self.label_9, 4, 1, 1, 3)
+
+        self.RFCCliente_2 = QLineEdit(self.modifyCliente_Widget)
+        self.RFCCliente_2.setObjectName(u"RFCCliente_2")
+
+        self.gridLayout_13.addWidget(self.RFCCliente_2, 2, 3, 1, 2)
+
+
+        self.gridLayout_12.addWidget(self.modifyCliente_Widget, 2, 0, 1, 1)
+
+        self.multipleMenu.addWidget(self.modifyCliente_page)
+        self.deleteClientePage = QWidget()
+        self.deleteClientePage.setObjectName(u"deleteClientePage")
+        self.gridLayout_15 = QGridLayout(self.deleteClientePage)
+        self.gridLayout_15.setSpacing(0)
+        self.gridLayout_15.setObjectName(u"gridLayout_15")
+        self.gridLayout_15.setContentsMargins(0, 0, 0, 0)
+        self.proveedorWidget_4 = QWidget(self.deleteClientePage)
+        self.proveedorWidget_4.setObjectName(u"proveedorWidget_4")
+        self.proveedorWidget_4.setMinimumSize(QSize(0, 58))
+        self.proveedorWidget_4.setMaximumSize(QSize(16777215, 58))
+        self.proveedorWidget_4.setStyleSheet(u"")
+        self.horizontalLayout_12 = QHBoxLayout(self.proveedorWidget_4)
+        self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
+        self.deleteClienteConfirm = QPushButton(self.proveedorWidget_4)
+        self.deleteClienteConfirm.setObjectName(u"deleteClienteConfirm")
+        self.deleteClienteConfirm.setEnabled(True)
+        self.deleteClienteConfirm.setMinimumSize(QSize(40, 40))
+        self.deleteClienteConfirm.setAutoFillBackground(False)
+        self.deleteClienteConfirm.setStyleSheet(u"QPushButton {\n"
+"	pading 8px 0 8px 15px;\n"
+"}")
+        icon17 = QIcon()
+        icon17.addFile(u":/icons/icon/delete.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.deleteClienteConfirm.setIcon(icon17)
+        self.deleteClienteConfirm.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_12.addWidget(self.deleteClienteConfirm)
+
+        self.cancelDeleteCliente = QPushButton(self.proveedorWidget_4)
+        self.cancelDeleteCliente.setObjectName(u"cancelDeleteCliente")
+        self.cancelDeleteCliente.setMinimumSize(QSize(40, 40))
+        self.cancelDeleteCliente.setIcon(icon16)
+        self.cancelDeleteCliente.setIconSize(QSize(25, 25))
+
+        self.horizontalLayout_12.addWidget(self.cancelDeleteCliente)
+
+        self.horizontalSpacer_19 = QSpacerItem(505, 17, QSizePolicy.Expanding, QSizePolicy.Minimum)
+
+        self.horizontalLayout_12.addItem(self.horizontalSpacer_19)
+
+        self.label_16 = QLabel(self.proveedorWidget_4)
+        self.label_16.setObjectName(u"label_16")
+        self.label_16.setFont(font3)
+
+        self.horizontalLayout_12.addWidget(self.label_16)
+
+
+        self.gridLayout_15.addWidget(self.proveedorWidget_4, 0, 0, 1, 1)
+
+        self.deleteCliente_Widget = QWidget(self.deleteClientePage)
+        self.deleteCliente_Widget.setObjectName(u"deleteCliente_Widget")
+        self.deleteCliente_Widget.setToolTipDuration(5)
+        self.deleteCliente_Widget.setStyleSheet(u"QWidget#deleteCliente_Widget{\n"
+"	background-image: url(:/icons/icon/fastfast.ico);\n"
+"	background-repeat: no-repeat;\n"
+"    background-position: center center;\n"
+"	background-origin: content;\n"
+"	background-color: rgb(255, 255, 255);\n"
+"}")
+        self.gridLayout_14 = QGridLayout(self.deleteCliente_Widget)
+        self.gridLayout_14.setSpacing(6)
+        self.gridLayout_14.setObjectName(u"gridLayout_14")
+        self.gridLayout_14.setContentsMargins(0, 9, 0, 9)
+        self.horizontalLayout_13 = QHBoxLayout()
+        self.horizontalLayout_13.setObjectName(u"horizontalLayout_13")
+        self.horizontalSpacer_22 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_22)
+
+        self.label_17 = QLabel(self.deleteCliente_Widget)
+        self.label_17.setObjectName(u"label_17")
+
+        self.horizontalLayout_13.addWidget(self.label_17)
+
+        self.ID_cliente_3 = QLineEdit(self.deleteCliente_Widget)
+        self.ID_cliente_3.setObjectName(u"ID_cliente_3")
+        self.ID_cliente_3.setEnabled(False)
+        self.ID_cliente_3.setMaximumSize(QSize(50, 16777215))
+        self.ID_cliente_3.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
+
+        self.horizontalLayout_13.addWidget(self.ID_cliente_3)
+
+        self.horizontalSpacer_23 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_23)
+
+        self.label_18 = QLabel(self.deleteCliente_Widget)
+        self.label_18.setObjectName(u"label_18")
+
+        self.horizontalLayout_13.addWidget(self.label_18)
+
+        self.nameCliente_3 = QLineEdit(self.deleteCliente_Widget)
+        self.nameCliente_3.setObjectName(u"nameCliente_3")
+        self.nameCliente_3.setEnabled(False)
+
+        self.horizontalLayout_13.addWidget(self.nameCliente_3)
+
+        self.horizontalSpacer_24 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.horizontalLayout_13.addItem(self.horizontalSpacer_24)
+
+
+        self.gridLayout_14.addLayout(self.horizontalLayout_13, 0, 0, 1, 6)
+
+        self.phoneCliente_3 = QLineEdit(self.deleteCliente_Widget)
+        self.phoneCliente_3.setObjectName(u"phoneCliente_3")
+        self.phoneCliente_3.setEnabled(False)
+
+        self.gridLayout_14.addWidget(self.phoneCliente_3, 3, 3, 1, 2)
+
+        self.label_19 = QLabel(self.deleteCliente_Widget)
+        self.label_19.setObjectName(u"label_19")
+
+        self.gridLayout_14.addWidget(self.label_19, 2, 1, 1, 2)
+
+        self.horizontalSpacer_25 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.gridLayout_14.addItem(self.horizontalSpacer_25, 2, 5, 1, 1)
+
+        self.verticalSpacer_9 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_14.addItem(self.verticalSpacer_9, 5, 1, 1, 1)
+
+        self.mailCliente_3 = QLineEdit(self.deleteCliente_Widget)
+        self.mailCliente_3.setObjectName(u"mailCliente_3")
+        self.mailCliente_3.setEnabled(False)
+
+        self.gridLayout_14.addWidget(self.mailCliente_3, 4, 4, 1, 1)
+
+        self.label_20 = QLabel(self.deleteCliente_Widget)
+        self.label_20.setObjectName(u"label_20")
+
+        self.gridLayout_14.addWidget(self.label_20, 3, 1, 1, 2)
+
+        self.verticalSpacer_10 = QSpacerItem(20, 427, QSizePolicy.Minimum, QSizePolicy.Expanding)
+
+        self.gridLayout_14.addItem(self.verticalSpacer_10, 5, 4, 1, 1)
+
+        self.line_9 = QFrame(self.deleteCliente_Widget)
+        self.line_9.setObjectName(u"line_9")
+        self.line_9.setFrameShape(QFrame.HLine)
+        self.line_9.setFrameShadow(QFrame.Sunken)
+
+        self.gridLayout_14.addWidget(self.line_9, 1, 0, 1, 6)
+
+        self.horizontalSpacer_26 = QSpacerItem(40, 20, QSizePolicy.Minimum, QSizePolicy.Minimum)
+
+        self.gridLayout_14.addItem(self.horizontalSpacer_26, 2, 0, 1, 1)
+
+        self.label_21 = QLabel(self.deleteCliente_Widget)
+        self.label_21.setObjectName(u"label_21")
+
+        self.gridLayout_14.addWidget(self.label_21, 4, 1, 1, 3)
+
+        self.RFCCliente_3 = QLineEdit(self.deleteCliente_Widget)
+        self.RFCCliente_3.setObjectName(u"RFCCliente_3")
+        self.RFCCliente_3.setEnabled(False)
+
+        self.gridLayout_14.addWidget(self.RFCCliente_3, 2, 3, 1, 2)
+
+
+        self.gridLayout_15.addWidget(self.deleteCliente_Widget, 1, 0, 1, 1)
+
+        self.multipleMenu.addWidget(self.deleteClientePage)
 
         self.gridLayout.addWidget(self.multipleMenu, 0, 0, 1, 1)
 
@@ -1082,19 +1432,62 @@ class Ui_MainWindow(object):
         self.horizontalLayout.addWidget(self.widget_3)
 
         MainWindow.setCentralWidget(self.centralwidget)
+        QWidget.setTabOrder(self.addFactura, self.modifyFactura)
+        QWidget.setTabOrder(self.modifyFactura, self.deleteFactura)
+        QWidget.setTabOrder(self.deleteFactura, self.searchFactura)
+        QWidget.setTabOrder(self.searchFactura, self.cleanFactura)
+        QWidget.setTabOrder(self.cleanFactura, self.tablaFacturas)
+        QWidget.setTabOrder(self.tablaFacturas, self.addPedido)
+        QWidget.setTabOrder(self.addPedido, self.modifyPedido)
+        QWidget.setTabOrder(self.modifyPedido, self.deletePedido)
+        QWidget.setTabOrder(self.deletePedido, self.searchPedido)
+        QWidget.setTabOrder(self.searchPedido, self.cleanPedido)
+        QWidget.setTabOrder(self.cleanPedido, self.tablaPedidos)
+        QWidget.setTabOrder(self.tablaPedidos, self.addAlimento)
+        QWidget.setTabOrder(self.addAlimento, self.modifyAlimento)
+        QWidget.setTabOrder(self.modifyAlimento, self.deleteAlimento)
+        QWidget.setTabOrder(self.deleteAlimento, self.searchAlimento)
+        QWidget.setTabOrder(self.searchAlimento, self.cleanAlimento)
+        QWidget.setTabOrder(self.cleanAlimento, self.tablaAlimentos)
+        QWidget.setTabOrder(self.tablaAlimentos, self.addCliente)
+        QWidget.setTabOrder(self.addCliente, self.modifyCliente)
+        QWidget.setTabOrder(self.modifyCliente, self.deleteCliente)
+        QWidget.setTabOrder(self.deleteCliente, self.searchCliente)
+        QWidget.setTabOrder(self.searchCliente, self.cleanCliente)
+        QWidget.setTabOrder(self.cleanCliente, self.tablaClientes)
+        QWidget.setTabOrder(self.tablaClientes, self.addEmpleado)
+        QWidget.setTabOrder(self.addEmpleado, self.modifyEmpleado)
+        QWidget.setTabOrder(self.modifyEmpleado, self.deleteEmpleado)
+        QWidget.setTabOrder(self.deleteEmpleado, self.searchEmpleado)
+        QWidget.setTabOrder(self.searchEmpleado, self.cleanEmpleado)
+        QWidget.setTabOrder(self.cleanEmpleado, self.tablaEmpleado)
+        QWidget.setTabOrder(self.tablaEmpleado, self.addProveedor)
+        QWidget.setTabOrder(self.addProveedor, self.modifyProveedor)
+        QWidget.setTabOrder(self.modifyProveedor, self.deleteProveedor)
+        QWidget.setTabOrder(self.deleteProveedor, self.searchProveedor)
+        QWidget.setTabOrder(self.searchProveedor, self.cleanProveedor)
+        QWidget.setTabOrder(self.cleanProveedor, self.tablaProveedor)
+        QWidget.setTabOrder(self.tablaProveedor, self.ID_cliente)
+        QWidget.setTabOrder(self.ID_cliente, self.nameCliente)
+        QWidget.setTabOrder(self.nameCliente, self.RFCCliente)
+        QWidget.setTabOrder(self.RFCCliente, self.phoneCliente)
+        QWidget.setTabOrder(self.phoneCliente, self.mailCliente)
+        QWidget.setTabOrder(self.mailCliente, self.saveCliente)
+        QWidget.setTabOrder(self.saveCliente, self.cancelOpCliente)
+        QWidget.setTabOrder(self.cancelOpCliente, self.iconHome)
         QWidget.setTabOrder(self.iconHome, self.fullHome)
         QWidget.setTabOrder(self.fullHome, self.iconFactura)
         QWidget.setTabOrder(self.iconFactura, self.iconPedido)
         QWidget.setTabOrder(self.iconPedido, self.iconAlimento)
-        QWidget.setTabOrder(self.iconAlimento, self.iconClientes)
-        QWidget.setTabOrder(self.iconClientes, self.iconEmpleados)
+        QWidget.setTabOrder(self.iconAlimento, self.iconEmpleados)
         QWidget.setTabOrder(self.iconEmpleados, self.iconProveedor)
-        QWidget.setTabOrder(self.iconProveedor, self.fullFactura)
+        QWidget.setTabOrder(self.iconProveedor, self.fullProveedor)
+        QWidget.setTabOrder(self.fullProveedor, self.iconClientes)
+        QWidget.setTabOrder(self.iconClientes, self.fullFactura)
         QWidget.setTabOrder(self.fullFactura, self.fullPedido)
         QWidget.setTabOrder(self.fullPedido, self.fullAlimento)
         QWidget.setTabOrder(self.fullAlimento, self.fullCliente)
         QWidget.setTabOrder(self.fullCliente, self.fullEmpleado)
-        QWidget.setTabOrder(self.fullEmpleado, self.fullProveedor)
 
         self.retranslateUi(MainWindow)
         self.iconFactura.toggled.connect(self.fullFactura.setChecked)
@@ -1110,7 +1503,7 @@ class Ui_MainWindow(object):
         self.fullEmpleado.toggled.connect(self.iconEmpleados.setChecked)
         self.fullProveedor.toggled.connect(self.iconProveedor.setChecked)
 
-        self.multipleMenu.setCurrentIndex(6)
+        self.multipleMenu.setCurrentIndex(3)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1262,6 +1655,8 @@ class Ui_MainWindow(object):
         self.searchCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Buscar Cliente", None))
 #endif // QT_CONFIG(tooltip)
         self.searchCliente.setText("")
+        self.ID_busqueda_label.setText(QCoreApplication.translate("MainWindow", u"ID:", None))
+        self.busquedaClienteConfirm.setText("")
 #if QT_CONFIG(tooltip)
         self.cleanCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Limpiar Cliente (F6)", None))
 #endif // QT_CONFIG(tooltip)
@@ -1340,11 +1735,48 @@ class Ui_MainWindow(object):
         self.cancelOpCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Cancelar", None))
 #endif // QT_CONFIG(tooltip)
         self.cancelOpCliente.setText("")
+        self.label_8.setText(QCoreApplication.translate("MainWindow", u"Alta de Cliente", None))
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"Correo Electr\u00f3nico:", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"R.F.C.:", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono:", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"ID:", None))
         self.ID_cliente.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"Nombre:", None))
+#if QT_CONFIG(tooltip)
+        self.modifyClienteConfirm.setToolTip(QCoreApplication.translate("MainWindow", u"Modificar Cliente (F3)", None))
+#endif // QT_CONFIG(tooltip)
+        self.modifyClienteConfirm.setText("")
+#if QT_CONFIG(shortcut)
+        self.modifyClienteConfirm.setShortcut(QCoreApplication.translate("MainWindow", u"F3", None))
+#endif // QT_CONFIG(shortcut)
+#if QT_CONFIG(tooltip)
+        self.cancelModifyCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Cancelar", None))
+#endif // QT_CONFIG(tooltip)
+        self.cancelModifyCliente.setText("")
+        self.label_15.setText(QCoreApplication.translate("MainWindow", u"Detalle de Cliente", None))
+        self.label_12.setText(QCoreApplication.translate("MainWindow", u"ID:", None))
+        self.ID_cliente_2.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.label_13.setText(QCoreApplication.translate("MainWindow", u"Nombre:", None))
+        self.label_10.setText(QCoreApplication.translate("MainWindow", u"R.F.C.:", None))
+        self.label_11.setText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono:", None))
+        self.label_9.setText(QCoreApplication.translate("MainWindow", u"Correo Electr\u00f3nico:", None))
+#if QT_CONFIG(tooltip)
+        self.deleteClienteConfirm.setToolTip(QCoreApplication.translate("MainWindow", u"Eliminar Cliente (F3)", None))
+#endif // QT_CONFIG(tooltip)
+        self.deleteClienteConfirm.setText("")
+#if QT_CONFIG(shortcut)
+        self.deleteClienteConfirm.setShortcut(QCoreApplication.translate("MainWindow", u"F3", None))
+#endif // QT_CONFIG(shortcut)
+#if QT_CONFIG(tooltip)
+        self.cancelDeleteCliente.setToolTip(QCoreApplication.translate("MainWindow", u"Cancelar", None))
+#endif // QT_CONFIG(tooltip)
+        self.cancelDeleteCliente.setText("")
+        self.label_16.setText(QCoreApplication.translate("MainWindow", u"Baja de Cliente", None))
+        self.label_17.setText(QCoreApplication.translate("MainWindow", u"ID:", None))
+        self.ID_cliente_3.setText(QCoreApplication.translate("MainWindow", u"1", None))
+        self.label_18.setText(QCoreApplication.translate("MainWindow", u"Nombre:", None))
+        self.label_19.setText(QCoreApplication.translate("MainWindow", u"R.F.C.:", None))
+        self.label_20.setText(QCoreApplication.translate("MainWindow", u"Tel\u00e9fono:", None))
+        self.label_21.setText(QCoreApplication.translate("MainWindow", u"Correo Electr\u00f3nico:", None))
     # retranslateUi
 

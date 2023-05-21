@@ -14,8 +14,8 @@
    <string>FastFast</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resources.qrc">
-    <normaloff>:/icons/icon/fastfast.ico</normaloff>:/icons/icon/fastfast.ico</iconset>
+   <iconset>
+    <normaloff>:/icons/icon/logoIcon.ico</normaloff>:/icons/icon/logoIcon.ico</iconset>
   </property>
   <property name="iconSize">
    <size>
@@ -821,7 +821,7 @@ QPushButton:checked {
        <item row="0" column="0">
         <widget class="QStackedWidget" name="multipleMenu">
          <property name="currentIndex">
-          <number>6</number>
+          <number>3</number>
          </property>
          <widget class="QWidget" name="pageFacturas">
           <layout class="QGridLayout" name="gridLayout_2">
@@ -1622,6 +1622,34 @@ QPushButton:checked {
                </widget>
               </item>
               <item>
+               <widget class="QLabel" name="ID_busqueda_label">
+                <property name="text">
+                 <string>ID:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="buscarEmpleado_linea">
+                <property name="minimumSize">
+                 <size>
+                  <width>100</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="busquedaClienteConfirm">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icon/search.ico</normaloff>:/icons/icon/search.ico</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
                <widget class="QPushButton" name="cleanCliente">
                 <property name="minimumSize">
                  <size>
@@ -1871,7 +1899,7 @@ QPushButton:checked {
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QTableView" name="tableView"/>
+            <widget class="QTableView" name="tablaEmpleado"/>
            </item>
           </layout>
          </widget>
@@ -2075,7 +2103,7 @@ QPushButton:checked {
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QTableWidget" name="tableWidget"/>
+            <widget class="QTableWidget" name="tablaProveedor"/>
            </item>
           </layout>
          </widget>
@@ -2259,6 +2287,19 @@ QPushButton:checked {
                 </property>
                </spacer>
               </item>
+              <item>
+               <widget class="QLabel" name="label_8">
+                <property name="font">
+                 <font>
+                  <family>Bahnschrift Light Condensed</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Alta de Cliente</string>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
@@ -2320,9 +2361,6 @@ QPushButton:checked {
                 </property>
                </spacer>
               </item>
-              <item row="2" column="2" colspan="2">
-               <widget class="QLineEdit" name="lineEdit_2"/>
-              </item>
               <item row="5" column="3">
                <spacer name="verticalSpacer_6">
                 <property name="orientation">
@@ -2336,11 +2374,8 @@ QPushButton:checked {
                 </property>
                </spacer>
               </item>
-              <item row="3" column="2" colspan="2">
-               <widget class="QLineEdit" name="lineEdit_3"/>
-              </item>
               <item row="4" column="3">
-               <widget class="QLineEdit" name="lineEdit_4"/>
+               <widget class="QLineEdit" name="mailCliente"/>
               </item>
               <item row="5" column="1">
                <spacer name="verticalSpacer_5">
@@ -2439,7 +2474,7 @@ QPushButton:checked {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLineEdit" name="lineEdit"/>
+                 <widget class="QLineEdit" name="nameCliente"/>
                 </item>
                 <item>
                  <spacer name="horizontalSpacer_10">
@@ -2447,7 +2482,7 @@ QPushButton:checked {
                    <enum>Qt::Horizontal</enum>
                   </property>
                   <property name="sizeType">
-                   <enum>QSizePolicy::MinimumExpanding</enum>
+                   <enum>QSizePolicy::Minimum</enum>
                   </property>
                   <property name="sizeHint" stdset="0">
                    <size>
@@ -2466,6 +2501,724 @@ QPushButton:checked {
                 </property>
                </widget>
               </item>
+              <item row="2" column="2" colspan="2">
+               <widget class="QLineEdit" name="RFCCliente"/>
+              </item>
+              <item row="3" column="2" colspan="2">
+               <widget class="QLineEdit" name="phoneCliente"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="modifyCliente_page">
+          <layout class="QGridLayout" name="gridLayout_12">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="proveedorWidget_3" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>58</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>58</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QPushButton" name="modifyClienteConfirm">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Modificar Cliente (F3)</string>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	pading 8px 0 8px 15px;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icon/modify.ico</normaloff>:/icons/icon/modify.ico</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="shortcut">
+                 <string>F3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="cancelModifyCliente">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Cancelar</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icon/exit.ico</normaloff>:/icons/icon/exit.ico</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_18">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>505</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_15">
+                <property name="font">
+                 <font>
+                  <family>Bahnschrift Light Condensed</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Detalle de Cliente</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QWidget" name="modifyCliente_Widget" native="true">
+             <property name="toolTipDuration">
+              <number>5</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget#modifyCliente_Widget{
+	background-image: url(:/icons/icon/fastfast.ico);
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-origin: content;
+	background-color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_13" rowstretch="0,0,0,0,0,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item row="0" column="0" colspan="6">
+               <layout class="QHBoxLayout" name="horizontalLayout_10">
+                <item>
+                 <spacer name="horizontalSpacer_15">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="text">
+                   <string>ID:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="ID_cliente_2">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_16">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="text">
+                   <string>Nombre:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="nameCliente_2"/>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_17">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="3" colspan="2">
+               <widget class="QLineEdit" name="phoneCliente_2"/>
+              </item>
+              <item row="2" column="1" colspan="2">
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>R.F.C.:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="5">
+               <spacer name="horizontalSpacer_14">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="5" column="1">
+               <spacer name="verticalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>427</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="4">
+               <widget class="QLineEdit" name="mailCliente_2"/>
+              </item>
+              <item row="3" column="1" colspan="2">
+               <widget class="QLabel" name="label_11">
+                <property name="text">
+                 <string>Teléfono:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="4">
+               <spacer name="verticalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>427</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0" colspan="6">
+               <widget class="Line" name="line_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <spacer name="horizontalSpacer_13">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="1" colspan="3">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>Correo Electrónico:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3" colspan="2">
+               <widget class="QLineEdit" name="RFCCliente_2"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="deleteClientePage">
+          <layout class="QGridLayout" name="gridLayout_15">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QWidget" name="proveedorWidget_4" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>58</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>58</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QPushButton" name="deleteClienteConfirm">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Eliminar Cliente (F3)</string>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QPushButton {
+	pading 8px 0 8px 15px;
+}</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icon/delete.ico</normaloff>:/icons/icon/delete.ico</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="shortcut">
+                 <string>F3</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="cancelDeleteCliente">
+                <property name="minimumSize">
+                 <size>
+                  <width>40</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="toolTip">
+                 <string>Cancelar</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="icon">
+                 <iconset resource="resources.qrc">
+                  <normaloff>:/icons/icon/exit.ico</normaloff>:/icons/icon/exit.ico</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>25</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_19">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>505</width>
+                  <height>17</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_16">
+                <property name="font">
+                 <font>
+                  <family>Bahnschrift Light Condensed</family>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Baja de Cliente</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QWidget" name="deleteCliente_Widget" native="true">
+             <property name="toolTipDuration">
+              <number>5</number>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QWidget#deleteCliente_Widget{
+	background-image: url(:/icons/icon/fastfast.ico);
+	background-repeat: no-repeat;
+    background-position: center center;
+	background-origin: content;
+	background-color: rgb(255, 255, 255);
+}</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_14" rowstretch="0,0,0,0,0,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>9</number>
+              </property>
+              <property name="spacing">
+               <number>6</number>
+              </property>
+              <item row="0" column="0" colspan="6">
+               <layout class="QHBoxLayout" name="horizontalLayout_13">
+                <item>
+                 <spacer name="horizontalSpacer_22">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_17">
+                  <property name="text">
+                   <string>ID:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="ID_cliente_3">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_23">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_18">
+                  <property name="text">
+                   <string>Nombre:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="nameCliente_3">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer_24">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Minimum</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item row="3" column="3" colspan="2">
+               <widget class="QLineEdit" name="phoneCliente_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1" colspan="2">
+               <widget class="QLabel" name="label_19">
+                <property name="text">
+                 <string>R.F.C.:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="5">
+               <spacer name="horizontalSpacer_25">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="5" column="1">
+               <spacer name="verticalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>427</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="4">
+               <widget class="QLineEdit" name="mailCliente_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1" colspan="2">
+               <widget class="QLabel" name="label_20">
+                <property name="text">
+                 <string>Teléfono:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="4">
+               <spacer name="verticalSpacer_10">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>427</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0" colspan="6">
+               <widget class="Line" name="line_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <spacer name="horizontalSpacer_26">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Minimum</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="4" column="1" colspan="3">
+               <widget class="QLabel" name="label_21">
+                <property name="text">
+                 <string>Correo Electrónico:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="3" colspan="2">
+               <widget class="QLineEdit" name="RFCCliente_3">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
@@ -2480,20 +3233,63 @@ QPushButton:checked {
   </widget>
  </widget>
  <tabstops>
+  <tabstop>addFactura</tabstop>
+  <tabstop>modifyFactura</tabstop>
+  <tabstop>deleteFactura</tabstop>
+  <tabstop>searchFactura</tabstop>
+  <tabstop>cleanFactura</tabstop>
+  <tabstop>tablaFacturas</tabstop>
+  <tabstop>addPedido</tabstop>
+  <tabstop>modifyPedido</tabstop>
+  <tabstop>deletePedido</tabstop>
+  <tabstop>searchPedido</tabstop>
+  <tabstop>cleanPedido</tabstop>
+  <tabstop>tablaPedidos</tabstop>
+  <tabstop>addAlimento</tabstop>
+  <tabstop>modifyAlimento</tabstop>
+  <tabstop>deleteAlimento</tabstop>
+  <tabstop>searchAlimento</tabstop>
+  <tabstop>cleanAlimento</tabstop>
+  <tabstop>tablaAlimentos</tabstop>
+  <tabstop>addCliente</tabstop>
+  <tabstop>modifyCliente</tabstop>
+  <tabstop>deleteCliente</tabstop>
+  <tabstop>searchCliente</tabstop>
+  <tabstop>cleanCliente</tabstop>
+  <tabstop>tablaClientes</tabstop>
+  <tabstop>addEmpleado</tabstop>
+  <tabstop>modifyEmpleado</tabstop>
+  <tabstop>deleteEmpleado</tabstop>
+  <tabstop>searchEmpleado</tabstop>
+  <tabstop>cleanEmpleado</tabstop>
+  <tabstop>tablaEmpleado</tabstop>
+  <tabstop>addProveedor</tabstop>
+  <tabstop>modifyProveedor</tabstop>
+  <tabstop>deleteProveedor</tabstop>
+  <tabstop>searchProveedor</tabstop>
+  <tabstop>cleanProveedor</tabstop>
+  <tabstop>tablaProveedor</tabstop>
+  <tabstop>ID_cliente</tabstop>
+  <tabstop>nameCliente</tabstop>
+  <tabstop>RFCCliente</tabstop>
+  <tabstop>phoneCliente</tabstop>
+  <tabstop>mailCliente</tabstop>
+  <tabstop>saveCliente</tabstop>
+  <tabstop>cancelOpCliente</tabstop>
   <tabstop>iconHome</tabstop>
   <tabstop>fullHome</tabstop>
   <tabstop>iconFactura</tabstop>
   <tabstop>iconPedido</tabstop>
   <tabstop>iconAlimento</tabstop>
-  <tabstop>iconClientes</tabstop>
   <tabstop>iconEmpleados</tabstop>
   <tabstop>iconProveedor</tabstop>
+  <tabstop>fullProveedor</tabstop>
+  <tabstop>iconClientes</tabstop>
   <tabstop>fullFactura</tabstop>
   <tabstop>fullPedido</tabstop>
   <tabstop>fullAlimento</tabstop>
   <tabstop>fullCliente</tabstop>
   <tabstop>fullEmpleado</tabstop>
-  <tabstop>fullProveedor</tabstop>
  </tabstops>
  <resources>
   <include location="resources.qrc"/>

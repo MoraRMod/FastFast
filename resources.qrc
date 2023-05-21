@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icons">
+    <file>icon/delete.ico</file>
     <file>icon/save.ico</file>
     <file>icon/saveOff.ico</file>
     <file>icon/exit.ico</file>
