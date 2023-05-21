@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icon/delete.ico</file>
+    <file>icon/save.ico</file>
+    <file>icon/saveOff.ico</file>
+    <file>icon/exit.ico</file>
+    <file>icon/cancelOff.ico</file>
+    <file>icon/modifyOff.ico</file>
+    <file>icon/reload.ico</file>
+    <file>icon/add.ico</file>
+    <file>icon/modify.ico</file>
+    <file>icon/cancel.ico</file>
+    <file>icon/search.ico</file>
+    <file>icon/bill.ico</file>
+    <file>icon/bill_active.ico</file>
+    <file>icon/customer.ico</file>
+    <file>icon/customer_active.ico</file>
+    <file>icon/employee.ico</file>
+    <file>icon/employee_active.ico</file>
+    <file>icon/fastfast.ico</file>
+    <file>icon/products.ico</file>
+    <file>icon/products_active.ico</file>
+    <file>icon/supplier.ico</file>
+    <file>icon/supplier_active.ico</file>
+    <file>icon/ticket.ico</file>
+    <file>icon/ticket_active.ico</file>
+  </qresource>
+</RCC>
