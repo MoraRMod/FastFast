@@ -10,6 +10,8 @@ class MainWindow(QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
         
+        self.clients = []
+        
         self.ui.FullWidget.setVisible(False)
         self.ui.iconHome.clicked.connect(self.button_logic)
         self.ui.fullHome.clicked.connect(self.button_logic)
@@ -29,6 +31,8 @@ class MainWindow(QMainWindow):
         self.ui.fullProveedor.clicked.connect(self.menu_logic)
         
         self.ui.multipleMenu.setCurrentIndex(6)
+        
+        self.ui.addCliente.clicked.connect(self.addClient)
 
     @Slot()
     def button_logic(self):
@@ -59,3 +63,7 @@ class MainWindow(QMainWindow):
             self.ui.multipleMenu.setCurrentIndex(4)
         elif self.ui.iconProveedor.isChecked() or self.ui.fullProveedor.isChecked():
             self.ui.multipleMenu.setCurrentIndex(5)
+            
+    @Slot()
+    def addClient(self):
+        print("client")
