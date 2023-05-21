@@ -20,7 +20,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(939, 621)
         icon = QIcon()
-        icon.addFile(u":/icons/icon/fastfast.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/icon/logoIcon.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setIconSize(QSize(50, 24))
         self.centralwidget = QWidget(MainWindow)
@@ -46,7 +46,9 @@ class Ui_MainWindow(object):
 "	width: 30px;\n"
 "	height: 50px;\n"
 "}")
-        self.iconHome.setIcon(icon)
+        icon1 = QIcon()
+        icon1.addFile(u":/icons/icon/fastfast.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.iconHome.setIcon(icon1)
         self.iconHome.setIconSize(QSize(60, 60))
         self.iconHome.setCheckable(True)
         self.iconHome.setAutoExclusive(False)
@@ -69,10 +71,10 @@ class Ui_MainWindow(object):
 "QPushButton:hover {\n"
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}")
-        icon1 = QIcon()
-        icon1.addFile(u":/icons/icon/bill.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon1.addFile(u":/icons/icon/bill_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconFactura.setIcon(icon1)
+        icon2 = QIcon()
+        icon2.addFile(u":/icons/icon/bill.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon2.addFile(u":/icons/icon/bill_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconFactura.setIcon(icon2)
         self.iconFactura.setIconSize(QSize(30, 30))
         self.iconFactura.setCheckable(True)
         self.iconFactura.setAutoExclusive(True)
@@ -90,10 +92,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon2 = QIcon()
-        icon2.addFile(u":/icons/icon/ticket.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon2.addFile(u":/icons/icon/ticket_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconPedido.setIcon(icon2)
+        icon3 = QIcon()
+        icon3.addFile(u":/icons/icon/ticket.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon3.addFile(u":/icons/icon/ticket_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconPedido.setIcon(icon3)
         self.iconPedido.setIconSize(QSize(30, 30))
         self.iconPedido.setCheckable(True)
         self.iconPedido.setAutoExclusive(True)
@@ -111,10 +113,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon3 = QIcon()
-        icon3.addFile(u":/icons/icon/products.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon3.addFile(u":/icons/icon/products_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconAlimento.setIcon(icon3)
+        icon4 = QIcon()
+        icon4.addFile(u":/icons/icon/products.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon4.addFile(u":/icons/icon/products_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconAlimento.setIcon(icon4)
         self.iconAlimento.setIconSize(QSize(30, 30))
         self.iconAlimento.setCheckable(True)
         self.iconAlimento.setAutoExclusive(True)
@@ -132,10 +134,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon4 = QIcon()
-        icon4.addFile(u":/icons/icon/customer.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon4.addFile(u":/icons/icon/customer_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconClientes.setIcon(icon4)
+        icon5 = QIcon()
+        icon5.addFile(u":/icons/icon/customer.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon5.addFile(u":/icons/icon/customer_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconClientes.setIcon(icon5)
         self.iconClientes.setIconSize(QSize(30, 30))
         self.iconClientes.setCheckable(True)
         self.iconClientes.setAutoExclusive(True)
@@ -153,10 +155,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon5 = QIcon()
-        icon5.addFile(u":/icons/icon/employee.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon5.addFile(u":/icons/icon/employee_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconEmpleados.setIcon(icon5)
+        icon6 = QIcon()
+        icon6.addFile(u":/icons/icon/employee.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon6.addFile(u":/icons/icon/employee_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconEmpleados.setIcon(icon6)
         self.iconEmpleados.setIconSize(QSize(30, 30))
         self.iconEmpleados.setCheckable(True)
         self.iconEmpleados.setAutoExclusive(True)
@@ -174,10 +176,10 @@ class Ui_MainWindow(object):
 "    background-color: rgba(86, 101, 115, 0.5);\n"
 "}\n"
 "")
-        icon6 = QIcon()
-        icon6.addFile(u":/icons/icon/supplier.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon6.addFile(u":/icons/icon/supplier_active.ico", QSize(), QIcon.Normal, QIcon.On)
-        self.iconProveedor.setIcon(icon6)
+        icon7 = QIcon()
+        icon7.addFile(u":/icons/icon/supplier.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon7.addFile(u":/icons/icon/supplier_active.ico", QSize(), QIcon.Normal, QIcon.On)
+        self.iconProveedor.setIcon(icon7)
         self.iconProveedor.setIconSize(QSize(30, 30))
         self.iconProveedor.setCheckable(True)
         self.iconProveedor.setAutoExclusive(True)
@@ -227,7 +229,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullFactura.setIcon(icon1)
+        self.fullFactura.setIcon(icon2)
         self.fullFactura.setIconSize(QSize(20, 20))
         self.fullFactura.setCheckable(True)
         self.fullFactura.setAutoExclusive(True)
@@ -254,7 +256,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullPedido.setIcon(icon2)
+        self.fullPedido.setIcon(icon3)
         self.fullPedido.setIconSize(QSize(20, 20))
         self.fullPedido.setCheckable(True)
         self.fullPedido.setAutoExclusive(True)
@@ -281,7 +283,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullAlimento.setIcon(icon3)
+        self.fullAlimento.setIcon(icon4)
         self.fullAlimento.setIconSize(QSize(20, 20))
         self.fullAlimento.setCheckable(True)
         self.fullAlimento.setAutoExclusive(True)
@@ -308,7 +310,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullCliente.setIcon(icon4)
+        self.fullCliente.setIcon(icon5)
         self.fullCliente.setIconSize(QSize(20, 20))
         self.fullCliente.setCheckable(True)
         self.fullCliente.setAutoExclusive(True)
@@ -335,7 +337,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullEmpleado.setIcon(icon5)
+        self.fullEmpleado.setIcon(icon6)
         self.fullEmpleado.setIconSize(QSize(20, 20))
         self.fullEmpleado.setCheckable(True)
         self.fullEmpleado.setAutoExclusive(True)
@@ -362,7 +364,7 @@ class Ui_MainWindow(object):
 "	color: #fff;\n"
 "}\n"
 "")
-        self.fullProveedor.setIcon(icon6)
+        self.fullProveedor.setIcon(icon7)
         self.fullProveedor.setIconSize(QSize(20, 20))
         self.fullProveedor.setCheckable(True)
         self.fullProveedor.setAutoExclusive(True)
@@ -385,7 +387,7 @@ class Ui_MainWindow(object):
 "	width: 30px;\n"
 "	height: 50px;\n"
 "}")
-        self.fullHome.setIcon(icon)
+        self.fullHome.setIcon(icon1)
         self.fullHome.setIconSize(QSize(60, 60))
         self.fullHome.setCheckable(True)
         self.fullHome.setAutoExclusive(False)
@@ -434,9 +436,9 @@ class Ui_MainWindow(object):
         self.addFactura.setMinimumSize(QSize(40, 40))
         self.addFactura.setAutoFillBackground(False)
         self.addFactura.setStyleSheet(u"")
-        icon7 = QIcon()
-        icon7.addFile(u":/icons/icon/add.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.addFactura.setIcon(icon7)
+        icon8 = QIcon()
+        icon8.addFile(u":/icons/icon/add.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.addFactura.setIcon(icon8)
         self.addFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.addFactura)
@@ -445,10 +447,10 @@ class Ui_MainWindow(object):
         self.modifyFactura.setObjectName(u"modifyFactura")
         self.modifyFactura.setEnabled(False)
         self.modifyFactura.setMinimumSize(QSize(40, 40))
-        icon8 = QIcon()
-        icon8.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon8.addFile(u":/icons/icon/modifyOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
-        self.modifyFactura.setIcon(icon8)
+        icon9 = QIcon()
+        icon9.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon9.addFile(u":/icons/icon/modifyOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.modifyFactura.setIcon(icon9)
         self.modifyFactura.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_2.addWidget(self.modifyFactura)
@@ -457,10 +459,10 @@ class Ui_MainWindow(object):
         self.deleteFactura.setObjectName(u"deleteFactura")
         self.deleteFactura.setEnabled(False)
         self.deleteFactura.setMinimumSize(QSize(40, 40))
-        icon9 = QIcon()
-        icon9.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon9.addFile(u":/icons/icon/cancelOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
-        self.deleteFactura.setIcon(icon9)
+        icon10 = QIcon()
+        icon10.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon10.addFile(u":/icons/icon/cancelOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.deleteFactura.setIcon(icon10)
         self.deleteFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.deleteFactura)
@@ -475,9 +477,9 @@ class Ui_MainWindow(object):
         self.searchFactura = QPushButton(self.facturaWidget)
         self.searchFactura.setObjectName(u"searchFactura")
         self.searchFactura.setMinimumSize(QSize(40, 40))
-        icon10 = QIcon()
-        icon10.addFile(u":/icons/icon/search.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.searchFactura.setIcon(icon10)
+        icon11 = QIcon()
+        icon11.addFile(u":/icons/icon/search.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.searchFactura.setIcon(icon11)
         self.searchFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.searchFactura)
@@ -485,9 +487,9 @@ class Ui_MainWindow(object):
         self.cleanFactura = QPushButton(self.facturaWidget)
         self.cleanFactura.setObjectName(u"cleanFactura")
         self.cleanFactura.setMinimumSize(QSize(40, 40))
-        icon11 = QIcon()
-        icon11.addFile(u":/icons/icon/reload.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.cleanFactura.setIcon(icon11)
+        icon12 = QIcon()
+        icon12.addFile(u":/icons/icon/reload.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.cleanFactura.setIcon(icon12)
         self.cleanFactura.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_2.addWidget(self.cleanFactura)
@@ -519,7 +521,7 @@ class Ui_MainWindow(object):
         self.addPedido.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addPedido.setIcon(icon7)
+        self.addPedido.setIcon(icon8)
         self.addPedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.addPedido)
@@ -527,9 +529,9 @@ class Ui_MainWindow(object):
         self.modifyPedido = QPushButton(self.pedidoWidget)
         self.modifyPedido.setObjectName(u"modifyPedido")
         self.modifyPedido.setMinimumSize(QSize(40, 40))
-        icon12 = QIcon()
-        icon12.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.modifyPedido.setIcon(icon12)
+        icon13 = QIcon()
+        icon13.addFile(u":/icons/icon/modify.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.modifyPedido.setIcon(icon13)
         self.modifyPedido.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_3.addWidget(self.modifyPedido)
@@ -537,9 +539,9 @@ class Ui_MainWindow(object):
         self.deletePedido = QPushButton(self.pedidoWidget)
         self.deletePedido.setObjectName(u"deletePedido")
         self.deletePedido.setMinimumSize(QSize(40, 40))
-        icon13 = QIcon()
-        icon13.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.deletePedido.setIcon(icon13)
+        icon14 = QIcon()
+        icon14.addFile(u":/icons/icon/cancel.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.deletePedido.setIcon(icon14)
         self.deletePedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.deletePedido)
@@ -554,7 +556,7 @@ class Ui_MainWindow(object):
         self.searchPedido = QPushButton(self.pedidoWidget)
         self.searchPedido.setObjectName(u"searchPedido")
         self.searchPedido.setMinimumSize(QSize(40, 40))
-        self.searchPedido.setIcon(icon10)
+        self.searchPedido.setIcon(icon11)
         self.searchPedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.searchPedido)
@@ -562,7 +564,7 @@ class Ui_MainWindow(object):
         self.cleanPedido = QPushButton(self.pedidoWidget)
         self.cleanPedido.setObjectName(u"cleanPedido")
         self.cleanPedido.setMinimumSize(QSize(40, 40))
-        self.cleanPedido.setIcon(icon11)
+        self.cleanPedido.setIcon(icon12)
         self.cleanPedido.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_3.addWidget(self.cleanPedido)
@@ -600,7 +602,7 @@ class Ui_MainWindow(object):
         self.addAlimento.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addAlimento.setIcon(icon7)
+        self.addAlimento.setIcon(icon8)
         self.addAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.addAlimento)
@@ -608,7 +610,7 @@ class Ui_MainWindow(object):
         self.modifyAlimento = QPushButton(self.alimentosWidget)
         self.modifyAlimento.setObjectName(u"modifyAlimento")
         self.modifyAlimento.setMinimumSize(QSize(40, 40))
-        self.modifyAlimento.setIcon(icon12)
+        self.modifyAlimento.setIcon(icon13)
         self.modifyAlimento.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_4.addWidget(self.modifyAlimento)
@@ -616,7 +618,7 @@ class Ui_MainWindow(object):
         self.deleteAlimento = QPushButton(self.alimentosWidget)
         self.deleteAlimento.setObjectName(u"deleteAlimento")
         self.deleteAlimento.setMinimumSize(QSize(40, 40))
-        self.deleteAlimento.setIcon(icon13)
+        self.deleteAlimento.setIcon(icon14)
         self.deleteAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.deleteAlimento)
@@ -631,7 +633,7 @@ class Ui_MainWindow(object):
         self.searchAlimento = QPushButton(self.alimentosWidget)
         self.searchAlimento.setObjectName(u"searchAlimento")
         self.searchAlimento.setMinimumSize(QSize(40, 40))
-        self.searchAlimento.setIcon(icon10)
+        self.searchAlimento.setIcon(icon11)
         self.searchAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.searchAlimento)
@@ -639,7 +641,7 @@ class Ui_MainWindow(object):
         self.cleanAlimento = QPushButton(self.alimentosWidget)
         self.cleanAlimento.setObjectName(u"cleanAlimento")
         self.cleanAlimento.setMinimumSize(QSize(40, 40))
-        self.cleanAlimento.setIcon(icon11)
+        self.cleanAlimento.setIcon(icon12)
         self.cleanAlimento.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_4.addWidget(self.cleanAlimento)
@@ -676,7 +678,7 @@ class Ui_MainWindow(object):
         self.addCliente.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addCliente.setIcon(icon7)
+        self.addCliente.setIcon(icon8)
         self.addCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.addCliente)
@@ -684,7 +686,7 @@ class Ui_MainWindow(object):
         self.modifyCliente = QPushButton(self.clientesWidget)
         self.modifyCliente.setObjectName(u"modifyCliente")
         self.modifyCliente.setMinimumSize(QSize(40, 40))
-        self.modifyCliente.setIcon(icon12)
+        self.modifyCliente.setIcon(icon13)
         self.modifyCliente.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_5.addWidget(self.modifyCliente)
@@ -692,7 +694,7 @@ class Ui_MainWindow(object):
         self.deleteCliente = QPushButton(self.clientesWidget)
         self.deleteCliente.setObjectName(u"deleteCliente")
         self.deleteCliente.setMinimumSize(QSize(40, 40))
-        self.deleteCliente.setIcon(icon13)
+        self.deleteCliente.setIcon(icon14)
         self.deleteCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.deleteCliente)
@@ -707,7 +709,7 @@ class Ui_MainWindow(object):
         self.searchCliente = QPushButton(self.clientesWidget)
         self.searchCliente.setObjectName(u"searchCliente")
         self.searchCliente.setMinimumSize(QSize(40, 40))
-        self.searchCliente.setIcon(icon10)
+        self.searchCliente.setIcon(icon11)
         self.searchCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.searchCliente)
@@ -715,7 +717,7 @@ class Ui_MainWindow(object):
         self.cleanCliente = QPushButton(self.clientesWidget)
         self.cleanCliente.setObjectName(u"cleanCliente")
         self.cleanCliente.setMinimumSize(QSize(40, 40))
-        self.cleanCliente.setIcon(icon11)
+        self.cleanCliente.setIcon(icon12)
         self.cleanCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_5.addWidget(self.cleanCliente)
@@ -752,7 +754,7 @@ class Ui_MainWindow(object):
         self.addEmpleado.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addEmpleado.setIcon(icon7)
+        self.addEmpleado.setIcon(icon8)
         self.addEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.addEmpleado)
@@ -760,7 +762,7 @@ class Ui_MainWindow(object):
         self.modifyEmpleado = QPushButton(self.empleadosWidget)
         self.modifyEmpleado.setObjectName(u"modifyEmpleado")
         self.modifyEmpleado.setMinimumSize(QSize(40, 40))
-        self.modifyEmpleado.setIcon(icon12)
+        self.modifyEmpleado.setIcon(icon13)
         self.modifyEmpleado.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_7.addWidget(self.modifyEmpleado)
@@ -768,7 +770,7 @@ class Ui_MainWindow(object):
         self.deleteEmpleado = QPushButton(self.empleadosWidget)
         self.deleteEmpleado.setObjectName(u"deleteEmpleado")
         self.deleteEmpleado.setMinimumSize(QSize(40, 40))
-        self.deleteEmpleado.setIcon(icon13)
+        self.deleteEmpleado.setIcon(icon14)
         self.deleteEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.deleteEmpleado)
@@ -783,7 +785,7 @@ class Ui_MainWindow(object):
         self.searchEmpleado = QPushButton(self.empleadosWidget)
         self.searchEmpleado.setObjectName(u"searchEmpleado")
         self.searchEmpleado.setMinimumSize(QSize(40, 40))
-        self.searchEmpleado.setIcon(icon10)
+        self.searchEmpleado.setIcon(icon11)
         self.searchEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.searchEmpleado)
@@ -791,7 +793,7 @@ class Ui_MainWindow(object):
         self.cleanEmpleado = QPushButton(self.empleadosWidget)
         self.cleanEmpleado.setObjectName(u"cleanEmpleado")
         self.cleanEmpleado.setMinimumSize(QSize(40, 40))
-        self.cleanEmpleado.setIcon(icon11)
+        self.cleanEmpleado.setIcon(icon12)
         self.cleanEmpleado.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_7.addWidget(self.cleanEmpleado)
@@ -828,7 +830,7 @@ class Ui_MainWindow(object):
         self.addProveedor.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        self.addProveedor.setIcon(icon7)
+        self.addProveedor.setIcon(icon8)
         self.addProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.addProveedor)
@@ -836,7 +838,7 @@ class Ui_MainWindow(object):
         self.modifyProveedor = QPushButton(self.proveedorWidget)
         self.modifyProveedor.setObjectName(u"modifyProveedor")
         self.modifyProveedor.setMinimumSize(QSize(40, 40))
-        self.modifyProveedor.setIcon(icon12)
+        self.modifyProveedor.setIcon(icon13)
         self.modifyProveedor.setIconSize(QSize(28, 28))
 
         self.horizontalLayout_8.addWidget(self.modifyProveedor)
@@ -844,7 +846,7 @@ class Ui_MainWindow(object):
         self.deleteProveedor = QPushButton(self.proveedorWidget)
         self.deleteProveedor.setObjectName(u"deleteProveedor")
         self.deleteProveedor.setMinimumSize(QSize(40, 40))
-        self.deleteProveedor.setIcon(icon13)
+        self.deleteProveedor.setIcon(icon14)
         self.deleteProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.deleteProveedor)
@@ -859,7 +861,7 @@ class Ui_MainWindow(object):
         self.searchProveedor = QPushButton(self.proveedorWidget)
         self.searchProveedor.setObjectName(u"searchProveedor")
         self.searchProveedor.setMinimumSize(QSize(40, 40))
-        self.searchProveedor.setIcon(icon10)
+        self.searchProveedor.setIcon(icon11)
         self.searchProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.searchProveedor)
@@ -867,7 +869,7 @@ class Ui_MainWindow(object):
         self.cleanProveedor = QPushButton(self.proveedorWidget)
         self.cleanProveedor.setObjectName(u"cleanProveedor")
         self.cleanProveedor.setMinimumSize(QSize(40, 40))
-        self.cleanProveedor.setIcon(icon11)
+        self.cleanProveedor.setIcon(icon12)
         self.cleanProveedor.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_8.addWidget(self.cleanProveedor)
@@ -940,10 +942,10 @@ class Ui_MainWindow(object):
         self.saveCliente.setStyleSheet(u"QPushButton {\n"
 "	pading 8px 0 8px 15px;\n"
 "}")
-        icon14 = QIcon()
-        icon14.addFile(u":/icons/icon/save.ico", QSize(), QIcon.Normal, QIcon.Off)
-        icon14.addFile(u":/icons/icon/saveOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
-        self.saveCliente.setIcon(icon14)
+        icon15 = QIcon()
+        icon15.addFile(u":/icons/icon/save.ico", QSize(), QIcon.Normal, QIcon.Off)
+        icon15.addFile(u":/icons/icon/saveOff.ico", QSize(), QIcon.Disabled, QIcon.Off)
+        self.saveCliente.setIcon(icon15)
         self.saveCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_9.addWidget(self.saveCliente)
@@ -951,9 +953,9 @@ class Ui_MainWindow(object):
         self.cancelOpCliente = QPushButton(self.proveedorWidget_2)
         self.cancelOpCliente.setObjectName(u"cancelOpCliente")
         self.cancelOpCliente.setMinimumSize(QSize(40, 40))
-        icon15 = QIcon()
-        icon15.addFile(u":/icons/icon/exit.ico", QSize(), QIcon.Normal, QIcon.Off)
-        self.cancelOpCliente.setIcon(icon15)
+        icon16 = QIcon()
+        icon16.addFile(u":/icons/icon/exit.ico", QSize(), QIcon.Normal, QIcon.Off)
+        self.cancelOpCliente.setIcon(icon16)
         self.cancelOpCliente.setIconSize(QSize(25, 25))
 
         self.horizontalLayout_9.addWidget(self.cancelOpCliente)

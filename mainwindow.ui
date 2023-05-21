@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="resources.qrc">
-    <normaloff>:/icons/icon/fastfast.ico</normaloff>:/icons/icon/fastfast.ico</iconset>
+    <normaloff>:/icons/icon/logoIcon.ico</normaloff>:/icons/icon/logoIcon.ico</iconset>
   </property>
   <property name="iconSize">
    <size>
